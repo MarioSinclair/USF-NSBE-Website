@@ -6,6 +6,12 @@ body {
     color: #333;
     background-color: #f9fafb;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Header */
 header {
     display: flex;
@@ -64,7 +70,8 @@ nav a:hover, nav a.active {
     color: #000;
     padding: 0px 20px;
     text-align: center;
-    margin: 0px 120px 60px 120px;
+    padding: 0px 120px 60px 120px;
+    border-bottom: 1px solid #4a4a4a45;
 }
 
 .hero-content h1 {
@@ -78,18 +85,22 @@ nav a:hover, nav a.active {
 }
 
 .button {
-    background-color: #333; /* Softer blue */
-    color: #fff;
-    padding: 15px 25px;
+    display: inline-block;
+    background: #1a1a1a;
+    color: white;
+    padding: 15px 30px;
     text-decoration: none;
-    margin: 5px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0px 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.button:hover {
+    transform: translateY(-3px);
+    background-color: #333;
 }
 
-.button:hover {
-    background-color: #1a1a1a; /* Darker color for hover state */
-}
 /* Highlights Section */
 .highlights {
     display: flex;
@@ -98,9 +109,17 @@ nav a:hover, nav a.active {
 }
 
 .highlight {
-    width: 45%;
+    width: 35%;
+    padding: 20px;
     text-align: center;
+    background-color: rgb(231, 230, 230);
+    border-radius: 15px;
 }
+.highlight h2{
+    margin: 10px 0px;
+}
+
+
 
 /* Footer */
 footer {
@@ -178,6 +197,7 @@ nav a:hover, nav a.active {
 .highlight-text {
     font-size: 20px;
     max-width: 300px;
+    margin: 15px;
 }
 
 .hero-image-container {
@@ -196,7 +216,6 @@ nav a:hover, nav a.active {
 
 .modern-footer {
     background-color: #f2f2f2;
-    margin-top: 20px;
     border-top: 1px solid #e5e5e5;
     padding: 40px 20px;
     display: flex;
@@ -304,8 +323,10 @@ nav a:hover, nav a.active {
     }
 }
 
+/* Conference Page Styling Start */
+
 .conference-image-container {
-    max-width: 100vw; /* Or your desired maximum width */
+    max-width: 100vw;
     box-sizing: border-box;
     margin-top: 70px;
 }
@@ -314,14 +335,13 @@ nav a:hover, nav a.active {
     width: 100%;
     height: auto;
     display: block;
-    max-height: 500px; /* Optional: set a maximum height if needed */
+    max-height: 500px;
     object-fit: cover;
 }
 
 .conference-content h1 {
     font-size: 48px;
 }
-
 
 .conference-content p {
     font-size: 22px;
@@ -371,6 +391,7 @@ nav a:hover, nav a.active {
 .faq-accordion {
     width: 60%;
     margin: auto;
+    margin-bottom: 50px;
     border-radius: 10px;
     background-color: #efefef;
     cursor: pointer;
@@ -393,3 +414,367 @@ nav a:hover, nav a.active {
     text-align: center;
     padding: 30px;
 }
+
+/* Conference Page Styling End */
+
+/* About Us Page Styling Start */
+
+.team {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.team-heading {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.about-heading {
+    font-size: 48px;
+    margin: 0px;
+}
+
+.about-subheading {
+    font-size: 22px;
+    margin: 2vh;
+}
+
+.team-container {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.zone-title {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.zone {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    gap: 3%;
+    
+}
+
+.team-member {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5%;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.1s ease;
+}
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-color: #3498db;
+}
+
+.member-image {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+.member-info {
+    height: 50%;
+    padding: 15px;
+    width: 100%;
+}
+
+.member-name {
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.member-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #3498db;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #5e5e5e6b;
+}
+
+.member-bio {
+    margin: 0;
+    padding: 15px 0px 10px 0px;
+}
+
+
+
+.member-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.member-icon {
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    position: relative;
+}
+
+.member-icon::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #3498db;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.member-icon:hover::after {
+    transform: scaleX(1);
+}
+
+.member-icon:hover {
+    transform: translateY(-2px);
+}
+
+
+/* About Us Page Styling End */
+
+/* WWAD Page Styling Start */
+
+.wwad {
+    background: whitesmoke;
+    color: black;
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.wwad-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.wwad-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.wwad-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+    color: #3498db;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #1a1a1a;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    background-color: #333;
+}
+
+.initiatives {
+    padding: 3vw;
+}
+
+.initiatives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+    
+}
+
+.initiative-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.initiative-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.initiative-icon {
+    width: 60px;
+    height: 60px;
+    background: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.initiative-card h3 {
+    font-size: 1.5rem;
+    color: #2a5298;
+    margin-bottom: 15px;
+}
+
+.initiative-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.initiative-list li {
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #666;
+}
+
+.initiative-list li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .initiatives-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* WWAD Us Page Styling End */
+
+/* Sponsors Page Styling Start */
+
+.sponsor {
+    padding: 70px 0;
+}
+
+.sponsor-subtitle {
+    text-align: center;
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;     
+}
+
+.sponsor-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sponsor-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.sponsor-content p {
+    font-size: 22px;
+}
+
+.value-prop-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.value-card {
+    background: white;
+    height: 50vh;
+    width: 20vw;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    background: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 2rem;
+    color: white;
+}
+
+.value-card h3 {
+    font-size: 1.6rem;
+    color: #2a5298;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.value-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Sponsors Page Styling End */
