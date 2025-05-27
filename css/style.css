@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    color: #333;
+    color: black;
     background-color: #f9fafb;
 }
 
@@ -168,7 +168,6 @@ nav a:hover, nav a.active {
     background-image: url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
-    color: #000;
     padding: 0px 20px;
     text-align: center;
     padding: 0px 120px 60px 120px;  
@@ -521,7 +520,6 @@ nav a:hover, nav a.active {
 
 .team {
     background-color: whitesmoke;
-    color: black;
 }
 
 .team-heading {
@@ -569,7 +567,6 @@ nav a:hover, nav a.active {
     text-align: center;
     margin: 0.5%;
     width: 300px;
-    height: 300px;
     padding: 10px;
     margin: 10px;
     border-radius: 15px;
@@ -662,7 +659,6 @@ nav a:hover, nav a.active {
 
 .wwad {
     background: whitesmoke;
-    color: black;
     padding: 80px 20px;
     text-align: center;
     min-height: 100vh;
@@ -889,6 +885,117 @@ nav a:hover, nav a.active {
 
 /* Contact Page Styling Start */
 
+.socials-section {
+    padding: 80px 20px;
+    text-align: center;
+    width: 55%;
+    height: 80vh;
+    margin: auto;
+}
 
+.contact-title {
+    font-size: 48px;
+    margin-bottom: 0px;
+}
 
+@keyframes fade-in-down {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-description {
+    font-size: 22px;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* grid-cols-2 */
+    gap: 1.5rem; /* gap-6 */
+    margin-bottom: 3rem; /* mb-12 */
+}
+
+.social-links-section {
+    padding: 20px;
+}
+
+/* Individual social link item */
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; /* p-4 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+    transition: all 0.3s ease-in-out; /* transition-all duration-300 */
+    transform: translateY(0); /* initial state for hover */
+    text-decoration: none; /* Remove underline from links */
+    justify-content: space-evenly;
+}
+
+.social-item:hover {
+    transform: translateY(-0.25rem); /* hover:-translate-y-1 */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* hover:shadow-lg */
+}
+
+.bulls-logo, .groupme-logo{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Social icon styling */
+.social-icon {
+    font-size: 1.875rem; /* text-3xl */
+    margin-bottom: 0.5rem; /* mb-2 */
+    transition: color 0.3s ease-in-out; /* group-hover:text-... */
+}
+
+/* Social text styling */
+.social-text {
+    font-weight: 600; /* font-semibold */
+    font-size: 1rem; /* text-base */
+}
+
+/* Specific colors for each social item */
+.social-item.bulls-connect { background-color: #d3ffcc; color: #007510; } /* bg-blue-50 text-blue-700 */
+.social-item.bulls-connect:hover { background-color: #beffb4; } /* hover:bg-blue-100 */
+.social-item.bulls-connect .social-icon:hover { color: #1d4ed8; } /* group-hover:text-blue-800 */
+
+.social-item.instagram { background-color: #fdf2f8; color: #db2777; } /* bg-pink-50 text-pink-700 */
+.social-item.instagram:hover { background-color: #fce7f3; } /* hover:bg-pink-100 */
+.social-item.instagram .social-icon:hover { color: #be185d; } /* group-hover:text-pink-800 */
+
+.social-item.linkedin { background-color: #eef2ff; color: #4f46e5; } /* bg-indigo-50 text-indigo-700 */
+.social-item.linkedin:hover { background-color: #e0e7ff; } /* hover:bg-indigo-100 */
+.social-item.linkedin .social-icon:hover { color: #3730a3; } /* group-hover:text-indigo-800 */
+
+.social-item.groupme { background-color: #d8f5ff; color: #16abdd; } /* bg-gray-700 text-white */
+.social-item.groupme:hover { background-color: #c6f0fe; } /* hover:bg-gray-800 */
+.social-item.groupme .social-icon:hover { color: #fff; } /* group-hover:text-white */
+
+.social-item.discord { background-color: #7289da; color: #fff; } /* bg-gray-700 text-white */
+.social-item.discord:hover { background-color: rgb(91, 112, 189); } /* hover:bg-gray-800 */
+.social-item.discord .social-icon:hover { color: #fff; } /* group-hover:text-white */
+
+.social-item.email { background-color: #fee2e2; color: #dc2626; } /* bg-red-50 text-red-700 */
+.social-item.email:hover { background-color: #fecaca; } /* hover:bg-red-100 */
+.social-item.email .social-icon:hover { color: #b91c1c; } /* group-hover:text-red-800 */
 /* Contact Page Styling End */
