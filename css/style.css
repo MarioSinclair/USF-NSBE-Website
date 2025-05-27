@@ -45,7 +45,8 @@ nav ul {
 }
 
 nav li {
-    margin: 0 0 0 25px;
+    display: flex;
+    align-items: center;
 }
 
 nav a {
@@ -108,7 +109,7 @@ nav a:hover, nav a.active {
 /* Mobile Navigation Menu */
 .nav-menu {
     position: fixed;
-    top: 60px;
+    top: 5rem;
     right: 0;
     width: 12rem; /* w-64 */
     background-color: whitesmoke; /* bg-gray-800 */
@@ -142,7 +143,7 @@ nav a:hover, nav a.active {
     background-color: #374151; /* hover:bg-gray-700 */
 }
 
-@media (min-width: 900px) { /* md breakpoint */
+@media (min-width: 1130px) { /* md breakpoint */
 .desktop-nav {
     display: flex; /* Show desktop nav */
 }
@@ -165,16 +166,16 @@ nav a:hover, nav a.active {
 
 /* Hero Section */
 .hero {
-    background-image: url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
     padding: 0px 20px;
+    margin: auto;
     text-align: center;
-    padding: 0px 120px 60px 120px;  
+    width: 80%;
 }
 
 .hero-content h1 {
-    font-size: 48px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -187,7 +188,7 @@ nav a:hover, nav a.active {
     display: inline-block;
     background: #1a1a1a;
     color: white;
-    padding: 15px 30px;
+    padding: 0.6rem 0.8rem;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
@@ -439,7 +440,7 @@ nav a:hover, nav a.active {
 }
 
 .conference-content h1 {
-    font-size: 48px;
+    font-size: 2rem;
 }
 
 .conference-content p {
@@ -448,20 +449,19 @@ nav a:hover, nav a.active {
 }
 
 .conference {
-    background-image: url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
     color: #000;
     padding: 0px 20px;
     text-align: center;
-    margin: 0px 120px 60px 120px;
+    margin: 0px 3rem 1.5rem 3rem;
 }
 
 .conference-highlight {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 50px 10px;
+    gap: 4rem;
 }
 
 .conference-highlight-inner-container {
@@ -472,13 +472,13 @@ nav a:hover, nav a.active {
 
 .conference-highlight-text {
     font-size: 20px;
-    max-width: 500px;
     text-align: justify;
+    width: 20rem;
 }
 
 .conference-map {
-    width: 550px;
-    height: 350px;
+    width: 20rem;
+    height: 20rem;
     border-radius: 10px;
 }
 
@@ -488,7 +488,7 @@ nav a:hover, nav a.active {
 }
 
 .faq-accordion {
-    width: 60%;
+    width: 70%;
     margin: auto;
     margin-bottom: 50px;
     border-radius: 10px;
@@ -497,8 +497,8 @@ nav a:hover, nav a.active {
 }
 
 .faq-accordion-item {
-    padding: 2% 5%;
-    width: 90%;
+    padding: 0.7rem;
+    
 }
 .faq-accordion-item:not(:last-child) {
     border-bottom: 1px solid #0000003d;
@@ -520,15 +520,15 @@ nav a:hover, nav a.active {
 
 .team {
     background-color: whitesmoke;
+    padding: 5rem 2rem;
 }
 
 .team-heading {
     text-align: center;
-    padding-top: 100px;
 }
 
 .about-heading {
-    font-size: 48px;
+    font-size: 2rem;
     margin: 0px;
 }
 
@@ -539,13 +539,13 @@ nav a:hover, nav a.active {
 
 .team-container {
     margin: 0 auto;
-    padding: 10px;
 }
 
 .zone-title {
     margin: 0;
+    font-size: 1.5rem;
     text-align: center;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .zone {
@@ -553,9 +553,7 @@ nav a:hover, nav a.active {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px 0px;
-    gap: 3%;
-    
+    gap: 2rem; 
 }
 
 .team-member {
@@ -568,7 +566,6 @@ nav a:hover, nav a.active {
     margin: 0.5%;
     width: 300px;
     padding: 10px;
-    margin: 10px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 2px solid transparent;
@@ -659,7 +656,7 @@ nav a:hover, nav a.active {
 
 .wwad {
     background: whitesmoke;
-    padding: 80px 20px;
+    padding: 5rem 2rem;
     text-align: center;
     min-height: 100vh;
 }
@@ -670,7 +667,7 @@ nav a:hover, nav a.active {
 }
 
 .wwad-content h1 {
-    font-size: 48px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -707,7 +704,7 @@ nav a:hover, nav a.active {
     display: inline-block;
     background: #1a1a1a;
     color: white;
-    padding: 15px 30px;
+    padding: 0.6rem 0.8rem;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
@@ -721,13 +718,17 @@ nav a:hover, nav a.active {
 }
 
 .initiatives {
+    margin: auto;
+}
 
-    padding: 3vw;
+.section-title {
+    padding: 2rem;
+    margin: 0px;
 }
 
 .initiatives-grid {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: center; 
     flex-wrap: wrap;
     width: 80%;
     margin: auto;
@@ -738,9 +739,9 @@ nav a:hover, nav a.active {
 
 .initiative-card {
     background: white;
-    width: 25vw;
+    width: 20rem;
     border-radius: 15px;
-    padding: 30px;
+    padding: 1.25rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -771,11 +772,16 @@ nav a:hover, nav a.active {
 
 .initiative-list {
     list-style: none;
+    text-align: left;
     margin-bottom: 20px;
 }
 
+.initiative-list{
+    padding-left: 0;
+}
+
 .initiative-list li {
-    padding: 8px 0;
+    padding: 0.5rem;
     padding-left: 20px;
     position: relative;
     color: #666;
@@ -800,17 +806,21 @@ nav a:hover, nav a.active {
 /* Sponsors Page Styling Start */
 
 .sponsor {
-    padding: 70px 0;
+    padding: 2rem 0;
 }
 
 .sponsor-subtitle {
     text-align: center;
     font-size: 22px;
     color: #666;
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;     
+}
+
+.sponsor-title {
+    margin: 0;
 }
 
 .sponsor-content {
@@ -819,7 +829,7 @@ nav a:hover, nav a.active {
 }
 
 .sponsor-content h1 {
-    font-size: 48px;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
@@ -831,17 +841,17 @@ nav a:hover, nav a.active {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 80%;
-    gap: 30px;
+    gap: 2rem;
     margin-bottom: 50px;
 }
 
 .value-card {
     background: white;
     border-radius: 15px;
-    max-width: 20vw;
     padding: 35px;
+    width: 20rem;
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
     text-align: center;
@@ -886,16 +896,13 @@ nav a:hover, nav a.active {
 /* Contact Page Styling Start */
 
 .socials-section {
-    padding: 80px 20px;
+    padding: 5rem 2rem;
     text-align: center;
-    width: 55%;
-    height: 80vh;
     margin: auto;
 }
 
-.contact-title {
-    font-size: 48px;
-    margin-bottom: 0px;
+.contact-title h1{
+    font-size: 2rem;
 }
 
 @keyframes fade-in-down {
@@ -925,14 +932,17 @@ nav a:hover, nav a.active {
 }
 
 .social-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* grid-cols-2 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 1.5rem; /* gap-6 */
     margin-bottom: 3rem; /* mb-12 */
 }
 
 .social-links-section {
-    padding: 20px;
+    margin: auto;
+    width: 80%;
 }
 
 /* Individual social link item */
@@ -940,6 +950,8 @@ nav a:hover, nav a.active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 5rem;
+    height: 5rem;
     padding: 1rem; /* p-4 */
     border-radius: 0.5rem; /* rounded-lg */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
