@@ -117,10 +117,10 @@ nav a:hover, nav a.active {
     transform: translateX(100%); /* Initially off-screen */
     transition: transform 0.3s ease-in-out; /* Smooth slide transition */
     z-index: 40; /* z-40 */
-    padding: 1.5rem; /* p-6 */
+    padding: 0.5rem; /* p-6 */
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* space-y-4 */
+    gap: 1rem; /* space-y-4 */
     border-top-left-radius: 0.5rem; /* rounded-l-lg */
     border-bottom-left-radius: 0.5rem; /* rounded-l-lg */
 }

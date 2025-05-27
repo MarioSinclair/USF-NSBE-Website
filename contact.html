@@ -15,14 +15,30 @@
             <a href="index.html"><img src="images/nsbelogo.png" alt="Organization Logo"></a>
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+            <ul class="desktop-nav">
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="whatwearedoing.html">What We're Doing</a></li>
                 <li><a href="sponsors.html">Sponsors</a></li>
                 <li><a href="conference.html">Conference</a></li>
                 <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>
+            <div class="mobile-menu-toggle" id="burgerToggle">
+                <div class="hamburger-lines">
+                    <span class="line line-top"></span>
+                    <span class="line line-middle"></span>
+                    <span class="line line-bottom"></span>
+                </div>
+            </div>
+
+            <div class="nav-menu" id="mobileMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="whatwearedoing.html">What We're Doing</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="conference.html">Conference</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
         </nav>
     </header>
 
@@ -54,7 +70,66 @@
         <!-- Other social media links -->
     </section>
 
-    <!-- Include Footer -->
+    <footer class="modern-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="whatwearedoing.html">What We're Doing</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="conference.html">Conference</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/usfnsbe" target="_blank" class="social-link">
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://linkedin.com/yourprofile" target="_blank" class="social-link">
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> info@yourorganization.org</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NSBE USF Chapter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Get references to the burger toggle and the mobile menu
+        const burgerToggle = document.getElementById('burgerToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        // Add an event listener to the burger toggle
+        burgerToggle.addEventListener('click', () => {
+            // Toggle the 'menu-open' class on both the burger icon and the menu itself
+            burgerToggle.classList.toggle('menu-open');
+            mobileMenu.classList.toggle('menu-open');
+        });
+
+        // Optional: Close menu when a link is clicked (better UX)
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                burgerToggle.classList.remove('menu-open');
+                mobileMenu.classList.remove('menu-open');
+            });
+        });
+    </script>
 
 </body>
 </html>
