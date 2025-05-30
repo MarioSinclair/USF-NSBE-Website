@@ -629,13 +629,14 @@ nav a:hover, nav a.active {
 
 .member-image {
     width: 50%;
+    height: 50%;
     border-radius: 50%;
     object-fit: cover;
   }
 
 .member-info {
     height: 50%;
-    padding: 15px;
+    padding-top: 5px;
     width: 100%;
 }
 
