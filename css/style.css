@@ -33,7 +33,6 @@ a {
 }
 
 
-
 /* Header */
 header {
     display: flex;
@@ -179,8 +178,94 @@ nav a:hover, nav a.active {
     padding: 2rem; /* Adjust for larger screens */
 }
 }
-
+/* Mobile Burger Menu Icon END*/
 /* Header End */
+
+
+/* Frontpage Carousel Start */
+.swiper {
+    position: relative;
+    width: 60%;
+    max-height: 60vh;
+    margin: auto;
+    border-radius: 0.75rem;
+    overflow: hidden; 
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: var(--color-button-text); 
+    padding: 10px 20px;
+    border-radius: 0.375rem; 
+    text-align: center;
+    max-width: 80%;
+}
+.slide-content h3 {
+    margin: 0 0 5px 0;
+    font-weight: 600; 
+    color: var(--color-button-text); /* Ensure caption heading color is light */
+}
+.slide-content p {
+    margin: 0;
+    font-size: 0.875rem; 
+    color: var(--color-button-text); /* Ensure caption paragraph color is light */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    /* Swiper's default CSS sets position: absolute, top: 50%, margin-top for vertical centering, and z-index. */
+    /* We are overriding/enhancing appearance and specific positioning here. */
+    position: absolute;
+    top: 0;
+    color: #E0AFA0 !important; 
+    width: 48px;  /* Slightly larger */
+    height: 48px; /* Slightly larger */
+    border-radius: 50%;
+    opacity: 0.8; /* Slightly transparent by default */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: var(--color-carousel-nav-hover); 
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--color-carousel-pagination); 
+    opacity: 0.7;
+    width: 10px;
+    height: 10px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #E0AFA0 !important; 
+    opacity: 1;
+}   
+
+/* Frontpage Carousel End */
 
 /* Hero Section */
 .hero {
@@ -223,7 +308,7 @@ nav a:hover, nav a.active {
 }
 
 .highlight {
-    width: 30%;
+    width: 25%;
     padding: 20px;
     text-align: center;
     background-color: #d3cfc6;
@@ -232,8 +317,6 @@ nav a:hover, nav a.active {
 .highlight h2{
     margin: 10px 0px;
 }
-
-
 
 /* Footer */
 footer {
@@ -359,13 +442,13 @@ nav a:hover, nav a.active {
 }
 
 .footer-section ul li a {
-    color: #666;
+    color: #666;    
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-    color: #333;
+    color: #E0AFA0;
 }
 
 .social-links {
@@ -381,7 +464,7 @@ nav a:hover, nav a.active {
 }
 
 .social-link:hover {
-    color: #333;
+    color: #E0AFA0;
 }
 
 .footer-bottom {
@@ -429,7 +512,9 @@ nav a:hover, nav a.active {
 }
 
 .conference-content p {
-    margin-bottom: 40px;
+    width: 70%;
+    margin: 40px auto;
+    
 }
 
 .conference {
@@ -547,7 +632,6 @@ nav a:hover, nav a.active {
 
 .member-image {
     width: 50%;
-    height: 50%;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -826,6 +910,10 @@ nav a:hover, nav a.active {
 
 /* Contact Page Styling Start */
 
+.contacts-section {
+    min-height: 100vh;
+}
+
 .socials-section {
     padding: 5rem 2rem;
     text-align: center;
@@ -859,13 +947,11 @@ nav a:hover, nav a.active {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.5rem; /* gap-6 */
-    margin-bottom: 3rem; /* mb-12 */
+    gap: 2.5rem; /* gap-6 */
 }
 
 .social-links-section {
-    margin: auto;
-    width: 80%;
+    margin: auto;   
 }
 
 /* Individual social link item */
@@ -873,14 +959,13 @@ nav a:hover, nav a.active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
-    padding: 1rem; /* p-4 */
+    width: 7rem;
+    height: 7rem;
+    padding: 1rem;
     border-radius: 0.5rem; /* rounded-lg */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
-    transition: all 0.3s ease-in-out; /* transition-all duration-300 */
-    transform: translateY(0); /* initial state for hover */
-    text-decoration: none; /* Remove underline from links */
+    transition: all 0.3s ease-in-out; 
+    transform: translateY(0);
     justify-content: space-evenly;
 }
 
@@ -890,15 +975,15 @@ nav a:hover, nav a.active {
 }
 
 .bulls-logo, .groupme-logo{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     border-radius: 15px;
 }
 
 /* Social icon styling */
 .social-icon {
-    font-size: 1.875rem; /* text-3xl */
+    font-size: 3rem; /* text-3xl */
     margin-bottom: 0.5rem; /* mb-2 */
     transition: color 0.3s ease-in-out; /* group-hover:text-... */
 }

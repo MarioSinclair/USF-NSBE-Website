@@ -4,6 +4,7 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USF NSBE</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -25,7 +26,7 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
             <div class="mobile-menu-toggle" id="burgerToggle">
-                <div class="hamburger-lines">
+                <div class="hamburger-lines">   
                     <span class="line line-top"></span>
                     <span class="line line-middle"></span>
                     <span class="line line-bottom"></span>
@@ -58,16 +59,31 @@
     </section>
 
     <!-- Highlights Section -->
-    
+
     <section class="highlights">
-        <div class="highlight">
-            <h2>Featured Event</h2>
-            <p class="highlight-text">Check our Instagram for upcoming events!</p>
-        </div>
-        <div class="highlight">
-            <h2>Featured Project</h2>
-            <p class="highlight-text">We are currently working on our walk for education! Fill out the form below to show interest!</p>
-            
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/new-eboard-roles.jpg" alt="Featured story 1" class="highlight-image">
+                    <div class="slide-content">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/new-eboard-roles.jpg" alt="Featured story 2" class="highlight-image">
+                        <div class="slide-content">
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/new-eboard-roles.jpg"  alt="Featured story 1" class="highlight-image">
+                    <div class="slide-content">
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
     
@@ -111,6 +127,7 @@
             <p>&copy; 2024 NSBE USF Chapter. All rights reserved.</p>
         </div>
     </footer>
+
     <script>
         // Get references to the burger toggle and the mobile menu
         const burgerToggle = document.getElementById('burgerToggle');
@@ -130,6 +147,48 @@
                 burgerToggle.classList.remove('menu-open');
                 mobileMenu.classList.remove('menu-open');
             });
+        });
+    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true, // Enables continuous loop mode
+            cssMode: true,
+            autoplay: {
+                delay: 5000, // Autoplay delay in milliseconds (5 seconds)
+                disableOnInteraction: false, // Autoplay will not be disabled after user interactions (swipes)
+            },
+            slidesPerView: 1, // Number of slides per view
+            spaceBetween: 0, // Space between slides (0 for full-width slides)
+            
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // Allows clicking on pagination bullets to navigate
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Accessibility features
+            a11y: {
+                prevSlideMessage: 'Previous slide',
+                nextSlideMessage: 'Next slide',
+                firstSlideMessage: 'This is the first slide',
+                lastSlideMessage: 'This is the last slide',
+                paginationBulletMessage: 'Go to slide {{index}}',
+            },
+            // Effect (optional, 'slide' is default, 'fade' is another common one)
+            // effect: 'fade',
+            // fadeEffect: {
+            //   crossFade: true
+            // },
         });
     </script>
 
