@@ -404,11 +404,17 @@ nav a:hover, nav a.active {
 }
 
 .hero-image-container .img-banner{
-    width: 40%;
+    width: 30%;
     margin: auto;
     padding: 1rem 3rem;
     max-height: 95vh; /* Optional: set a maximum height if needed */
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero-image-container .img-banner {
+        width: 60%;
+    }
 }
 
 .modern-footer {
@@ -600,6 +606,7 @@ nav a:hover, nav a.active {
     margin: 0;
     text-align: center;
     padding: 1rem;
+    border-bottom: 0.5px solid #c7c7c7;
 }
 
 .zone {
@@ -634,7 +641,7 @@ nav a:hover, nav a.active {
 
 .member-image {
     width: 50%;
-    height: 50%;
+
     border-radius: 50%;
     object-fit: cover;
   }
