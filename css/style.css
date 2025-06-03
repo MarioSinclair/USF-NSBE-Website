@@ -641,9 +641,8 @@ nav a:hover, nav a.active {
 
 .member-image {
     width: 50%;
-
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
 .member-info {
