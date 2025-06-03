@@ -642,7 +642,7 @@ nav a:hover, nav a.active {
 .member-image {
     max-width: 50%;
     height: auto;
-    border-radius: 50%;
+    border-radius: 40%;
     object-fit: cover;
   }
 
