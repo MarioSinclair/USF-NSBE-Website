@@ -640,10 +640,10 @@ nav a:hover, nav a.active {
 }
 
 .member-image {
-    width: 50%;
+    max-width: 50%;
     height: auto;
     border-radius: 50%;
-    object-fit: fill;
+    object-fit: cover;
   }
 
 .member-info {
