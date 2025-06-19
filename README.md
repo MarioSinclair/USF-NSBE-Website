@@ -11,7 +11,7 @@ To set up the project locally, follow these steps:
 git clone https://github.com/MarioSinclair/NSBE-LandingPage.git
 
 # Navigate to the project directory
-cd nsbe-website
+cd nsbe-landingpage
 
 # Open the project in a browser
 open index.html  # or manually open the file in your browser
