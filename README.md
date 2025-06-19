@@ -1,7 +1,7 @@
 ## Contributing to the USF NSBE Website
 
 ### Description
-This project is a simple, responsive website built with HTML and CSS. The homepage is complete, and additional pages need to be created following the existing template and styling language.
+This project is a simple, responsive website built with HTML, CSS and JavaScript. The website is majority complete, and additions need to be made for some of the pages following the existing template and styling language.
 
 ### Installation
 To set up the project locally, follow these steps:
