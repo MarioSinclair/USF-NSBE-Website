@@ -14,7 +14,7 @@ git clone https://github.com/MarioSinclair/NSBE-LandingPage.git
 cd nsbe-landingpage
 
 # Open the project in a browser
-open index.html  # or manually open the file in your browser
+start index.html  # or manually open the file in your browser
 ```
 
 ### Contribution Guidelines
