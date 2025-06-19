@@ -185,7 +185,7 @@ nav a:hover, nav a.active {
 /* Frontpage Carousel Start */
 .swiper {
     position: relative;
-    width: 50%;
+    width: 70%;
     max-height: 70vh;
     margin: auto;
     border-radius: 0.75rem;
@@ -769,14 +769,22 @@ nav a:hover, nav a.active {
 }
 
 .initiatives-grid {
-    display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
     width: 80%;
     margin: auto;
     gap: 30px;
     margin-bottom: 40px;
-    
+}
+
+@media (max-width: 800px){
+    .initiatives-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
 
 .initiative-card {
@@ -836,7 +844,7 @@ nav a:hover, nav a.active {
 
 @media (max-width: 600px) {
   .initiatives-grid {
-    grid-template-columns: 1fr;
+    width: 90%;
   }
 }
 
@@ -878,6 +886,20 @@ nav a:hover, nav a.active {
     width: 80%;
     gap: 2rem;
     margin-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+    .sponsor-content {
+        padding: 1rem;
+    }
+
+    .sponsor-subtitle {
+        padding: 1rem;
+    }
+
+    .value-prop-grid {
+        width: 90%;
+    }
 }
 
 .value-card {
@@ -967,6 +989,13 @@ nav a:hover, nav a.active {
 
 .social-links-section {
     margin: auto;   
+}
+
+@media (max-width: 800px) {
+    .social-grid { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* Individual social link item */
