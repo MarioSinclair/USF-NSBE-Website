@@ -8,7 +8,7 @@ To set up the project locally, follow these steps:
 
 ```sh
 # Clone the repository
-git clone https://github.com/moyo-ayy/nsbe-website.git
+git clone https://github.com/MarioSinclair/NSBE-LandingPage.git
 
 # Navigate to the project directory
 cd nsbe-website
