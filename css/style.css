@@ -185,15 +185,15 @@ nav a:hover, nav a.active {
 /* Frontpage Carousel Start */
 .swiper {
     position: relative;
-    width: 70%;
-    max-height: 70vh;
+    width: 40%;
+    max-height: 50vh;
     margin: auto;
     border-radius: 0.75rem;
     overflow: hidden; 
     box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .swiper {
         width: 100%;
     }
@@ -637,6 +637,10 @@ nav a:hover, nav a.active {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     border-color: #6D5959;
+}
+
+.lead:hover {
+    border-color: #0A81D1;
 }
 
 .member-image {
