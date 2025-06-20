@@ -769,11 +769,12 @@ nav a:hover, nav a.active {
 }
 
 .initiatives-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin: auto;
+    width: 70%;
     gap: 30px;
     margin-bottom: 40px;
 }
