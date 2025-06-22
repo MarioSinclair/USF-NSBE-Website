@@ -132,9 +132,9 @@ nav a:hover, nav a.active {
 /* Mobile Navigation Menu */
 .nav-menu {
     position: fixed;
-    top: 5rem;
+    top: 4.5rem;
     right: 0;
-    width: 12rem; /* w-64 */
+    width: 10rem; /* w-64 */
     color: #fff;
     background-color: #F4F3EE;
     box-shadow: -4px 0 6px -1px rgba(0, 0, 0, 0.1), -2px 0 4px -1px rgba(0, 0, 0, 0.06); /* shadow-lg */
