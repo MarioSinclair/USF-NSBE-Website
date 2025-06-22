@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What We're Doing | USF NSBE</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="./images/nsbelogo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/nsbelogo.png">
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <a href="index.html"><img src="images/usflogo.png" alt="Organization Logo"></a>
+            <a href="index.html"><img src="../images/usflogo.png" alt="Organization Logo"></a>
         </div>
         <div class="logo">
-            <a href="index.html"><img src="images/nsbelogo.png" alt="Organization Logo"></a>
+            <a href="index.html"><img src="../images/nsbelogo.png" alt="Organization Logo"></a>
         </div>
         <nav>
             <ul class="desktop-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="whatwearedoing.html" class="active">What We're Doing</a></li>
-                <li><a href="sponsors.html">Sponsors</a></li>
-                <li><a href="conference.html">Conference</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About Us</a></li>
+                <li><a href="/initiatives/" class="active">Initiatives</a></li>
+                <li><a href="/sponsors/">Sponsors</a></li>
+                <li><a href="/conference/">Conference</a></li>
+                <li><a href="/contact/">Contact Us</a></li>
             </ul>
+
             <div class="mobile-menu-toggle" id="burgerToggle">
                 <div class="hamburger-lines">
                     <span class="line line-top"></span>
@@ -33,12 +34,14 @@
             </div>
 
             <div class="nav-menu" id="mobileMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="whatwearedoing.html" class="active">What We're Doing</a></li>
-                <li><a href="sponsors.html">Sponsors</a></li>
-                <li><a href="conference.html">Conference</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/initiatives/" class="active">Initiatives</a></li>
+                    <li><a href="/sponsors/">Sponsors</a></li>
+                    <li><a href="/conference/">Conference</a></li>
+                    <li><a href="/contact/">Contact Us</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -133,12 +136,12 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="whatwearedoing.html">What We're Doing</a></li>
-                    <li><a href="sponsors.html">Sponsors</a></li>
-                    <li><a href="conference.html">Conference</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/initiatives/">Initiatives</a></li>
+                    <li><a href="/sponsors/">Sponsors</a></li>
+                    <li><a href="/conference/">Conference</a></li>
+                    <li><a href="/contact/">Contact Us</a></li>
                 </ul>
             </div>
             
@@ -166,9 +169,8 @@
             <p>&copy; 2025 NSBE USF Chapter. All rights reserved.</p>
         </div>
     </footer>
-
     <script>
-        // Get references to theW burger toggle and the mobile menu
+        // Get references to the burger toggle and the mobile menu
         const burgerToggle = document.getElementById('burgerToggle');
         const mobileMenu = document.getElementById('mobileMenu');
 
@@ -188,46 +190,5 @@
             });
         });
     </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper', {
-            // Optional parameters
-            loop: true, // Enables continuous loop mode
-            cssMode: true,
-            autoplay: {
-                delay: 5000, // Autoplay delay in milliseconds (5 seconds)
-                disableOnInteraction: false, // Autoplay will not be disabled after user interactions (swipes)
-            },
-            slidesPerView: 1, // Number of slides per view
-            spaceBetween: 0, // Space between slides (0 for full-width slides)
-            
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true, // Allows clicking on pagination bullets to navigate
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // Accessibility features
-            a11y: {
-                prevSlideMessage: 'Previous slide',
-                nextSlideMessage: 'Next slide',
-                firstSlideMessage: 'This is the first slide',
-                lastSlideMessage: 'This is the last slide',
-                paginationBulletMessage: 'Go to slide {{index}}',
-            },
-            // Effect (optional, 'slide' is default, 'fade' is another common one)
-            // effect: 'fade',
-            // fadeEffect: {
-            //   crossFade: true
-            // },
-        });
-    </script>
-
 </body>
 </html>
