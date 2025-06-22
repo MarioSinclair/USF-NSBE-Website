@@ -749,6 +749,8 @@ nav a:hover, nav a.active {
 
 .stat-item {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .stat-number {
