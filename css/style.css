@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 /* General Styles */
 html {
     font-size: 16px;
@@ -359,8 +361,6 @@ footer {
         margin-bottom: 30px;
     }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 nav a:hover, nav a.active {
     background-color: #E0AFA0;

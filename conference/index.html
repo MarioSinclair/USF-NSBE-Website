@@ -10,10 +10,10 @@
 
     <header>
         <div class="logo">
-            <a href="index.html"><img src="../images/usflogo.png" alt="Organization Logo"></a>
+            <a href="/"><img src="../images/usflogo.png" alt="Organization Logo"></a>
         </div>
         <div class="logo">
-            <a href="index.html"><img src="../images/nsbelogo.png" alt="Organization Logo"></a>
+            <a href="/"><img src="../images/nsbelogo.png" alt="Organization Logo"></a>
         </div>
         <nav>
             <ul class="desktop-nav">
@@ -35,7 +35,7 @@
 
             <div class="nav-menu" id="mobileMenu">
                 <ul>
-                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/about/">About Us</a></li>
                     <li><a href="/initiatives/">Initiatives</a></li>
                     <li><a href="/sponsors/">Sponsors</a></li>
@@ -47,7 +47,12 @@
     </header>
 
     <div class="conference-image-container">
-        <img src="images/convention-banner.png" alt="NSBE 2025 Convention Banner">
+        <picture>
+            
+            <source srcset="./images/convention-banner.avif" type="image/avif">
+            <source srcset="./images/convention-banner.webp" type="image/webp">
+            <img src="./images/convention-banner.jpg" alt="NSBE 2025 Convention Banner">
+        </picture>
     </div>
 
     <!-- Conference Overview -->
