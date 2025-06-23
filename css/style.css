@@ -740,10 +740,9 @@ nav a:hover, nav a.active {
 }
 
 .stats-row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
     margin: 40px 0;
 }
 
@@ -849,10 +848,15 @@ nav a:hover, nav a.active {
     color: #E0AFA0;
 }
 
-@media (max-width: 600px) {
-  .initiatives-grid {
-    width: 90%;
-  }
+@media (max-width: 800px) {
+
+    .stats-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .initiatives-grid {
+        width: 90%;
+    }
 }
 
 /* WWAD Us Page Styling End */
