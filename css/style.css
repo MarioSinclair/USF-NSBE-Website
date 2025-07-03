@@ -186,7 +186,6 @@ nav a:hover, nav a.active {
 
 /* Frontpage Carousel Start */
 .swiper {
-    position: relative;
     width: 50%;
     max-height: 400px;
     margin: auto;
@@ -199,7 +198,6 @@ nav a:hover, nav a.active {
     .swiper {
         width: 100%;
     }
-    
 }
 
 .swiper-slide {
