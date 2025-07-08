@@ -70,7 +70,7 @@
 
                     
                 </div> 
-                <a href="#get-involved" class="button">Become a Sponsor</a>
+                <a href="./USF_NSBE_Corporate_Sponsorship_25_26.pdf" class="button" download>Download our Sponsorship Packet!</a>
             </div>
         </div>
 
@@ -176,17 +176,23 @@
         document.addEventListener('DOMContentLoaded', function() {
             const counters = document.querySelectorAll('.stat-number');
             const animateCounter = (counter) => {
-                const target = parseInt(counter.textContent.replace(/\D/g, ''));
-                const suffix = counter.textContent.replace(/[\d.]/g, '');
+                const originalText = counter.textContent;
+                // Extract number including decimal point
+                const numberMatch = originalText.match(/[\d.]+/);
+                const target = numberMatch ? parseFloat(numberMatch[0]) : 0;
+                const suffix = originalText.replace(/[\d.]+/, '');
+                const isDecimal = originalText.includes('.');
+                const decimalPlaces = isDecimal ? target.toString().split('.')[1]?.length || 0 : 0;
+                
                 let current = 0;
                 const increment = target / 30;
                 const timer = setInterval(() => {
                     current += increment;
                     if (current >= target) {
-                        counter.textContent = target + suffix;
+                        counter.textContent = target.toFixed(decimalPlaces) + suffix;
                         clearInterval(timer);
                     } else {
-                        counter.textContent = Math.floor(current) + suffix;
+                        counter.textContent = current.toFixed(decimalPlaces) + suffix;
                     }
                 }, 50);
             };
