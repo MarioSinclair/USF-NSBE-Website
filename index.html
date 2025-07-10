@@ -73,13 +73,13 @@
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="./images/new-eboard-roles.jpg" alt="Featured story 1" class="highlight-image">
+                    <img src="./images/eboard_1.jpg" alt="Featured story 1" class="highlight-image">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./images/new-eboard-roles.jpg" alt="Featured story 2" class="highlight-image">
+                    <img src="./images/eboard_2.jpg" alt="Featured story 2" class="highlight-image">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./images/new-eboard-roles.jpg"  alt="Featured story 1" class="highlight-image">
+                    <img src="./images/eboard_3.jpg"  alt="Featured story 1" class="highlight-image">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -158,8 +158,8 @@
             loop: true, // Enables continuous loop mode
             cssMode: true,
             autoplay: {
-                delay: 5000, // Autoplay delay in milliseconds (5 seconds)
-                disableOnInteraction: false, // Autoplay will not be disabled after user interactions (swipes)
+                delay: 1000000, // Autoplay delay in milliseconds (5 seconds)
+                disableOnInteraction: true, // Autoplay will not be disabled after user interactions (swipes)
             },
             slidesPerView: 1, // Number of slides per view
             spaceBetween: 0, // Space between slides (0 for full-width slides)
@@ -183,12 +183,7 @@
                 firstSlideMessage: 'This is the first slide',
                 lastSlideMessage: 'This is the last slide',
                 paginationBulletMessage: 'Go to slide {{index}}',
-            },
-            // Effect (optional, 'slide' is default, 'fade' is another common one)
-            // effect: 'fade',
-            // fadeEffect: {
-            //   crossFade: true
-            // },
+            }
         });
     </script>
 
