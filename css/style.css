@@ -265,7 +265,7 @@ nav a:hover, nav a.active {
 
 .button {
     display: inline-block;
-    background-color: #E0AFA0;
+    background-color: #009639;
     color: white;
     padding: 0.6rem 0.8rem;
     text-decoration: none;
@@ -315,7 +315,7 @@ footer {
 }
 
 nav a:hover, nav a.active {
-    background-color: #E0AFA0;
+    background-color: #009639;
     color: #fff;
 }
 
@@ -620,7 +620,7 @@ nav a:hover, nav a.active {
 
 .member-title {
     font-weight: 400;
-    color: #E0AFA0;
+    color: #009639;
     margin: 0;
     padding-bottom: 10px;
     border-bottom: 1px solid #5e5e5e6b;
@@ -667,7 +667,6 @@ nav a:hover, nav a.active {
     transform: translateY(-2px);
 }
 
-
 /* About Us Page Styling End */
 
 /* WWAD Page Styling Start */
@@ -708,7 +707,7 @@ nav a:hover, nav a.active {
     font-size: 2.5rem;
     font-weight: bold;
     display: block;
-    color: #E0AFA0;
+    color: #009639;
 }
 
 .stat-label {
