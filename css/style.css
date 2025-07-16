@@ -381,6 +381,7 @@ nav a:hover, nav a.active {
 .footer-container {
     display: flex;
     justify-content: space-evenly;
+    text-align: left;
     gap: 40px;
     width: 80%;
 }
@@ -673,8 +674,8 @@ nav a:hover, nav a.active {
 
 .wwad {
     padding: 5rem 0;
-    text-align: center;
     min-height: 100vh;
+    text-align: center;
 }
 
 .wwad-content {
