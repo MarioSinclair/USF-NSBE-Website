@@ -186,7 +186,7 @@
                 const decimalPlaces = isDecimal ? target.toString().split('.')[1]?.length || 0 : 0;
                 
                 let current = 0;
-                const increment = target / 30;
+                const increment = target / 10;
                 const timer = setInterval(() => {
                     current += increment;
                     if (current >= target) {
