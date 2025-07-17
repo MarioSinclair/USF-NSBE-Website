@@ -1147,13 +1147,14 @@ nav a:hover, nav a.active {
   }
   .category-header {
     flex-direction: column;
-    align-items: flex-start;
+    text-align: center;
+    padding: 0;
     gap: 0.5rem;
-    padding-left: 0.7rem;
   }
   .category-stat {
     margin-left: 0;
     margin-top: 0.5rem;
+    text-align: center; 
   }
   .category-section::before {
     left: 1rem;
@@ -1241,15 +1242,7 @@ nav a:hover, nav a.active {
 }
 
 @media (max-width: 700px) {
-    .chapter-intro-card {
-        padding: 1.2rem 0.7rem 1rem 0.7rem;
-        border-radius: 0.7rem;
-        border-left: 4px solid #009639;
-        border-right: 4px solid #FFD100;
-        border-top: 4px solid #009639;
-        border-bottom: 4px solid #FFD100;
-        
-    }
+    
     .chapter-intro-title {
         font-size: 1.2rem;
     }
