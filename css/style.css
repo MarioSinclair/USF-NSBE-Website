@@ -113,7 +113,7 @@ nav a:hover, nav a.active {
 .hamburger-lines .line {
     display: block;
     height: 0.25rem; /* h-1 */
-    background-color: #E0AFA0; /* bg-white */
+    background-color: #009639; /* bg-white */
     border-radius: 100px; /* rounded-full */
     margin: 3px;
     transition: all 0.3s ease-in-out;
