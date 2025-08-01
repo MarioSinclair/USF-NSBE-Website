@@ -258,40 +258,40 @@
                 mobileMenu.classList.remove('menu-open');
             });
         });
-        document.addEventListener('DOMContentLoaded', function() {
-            const counters = document.querySelectorAll('.stat-number');
-            const animateCounter = (counter) => {
-                const originalText = counter.textContent;
-                // Extract number including decimal point
-                const numberMatch = originalText.match(/[\d.]+/);
-                const target = numberMatch ? parseFloat(numberMatch[0]) : 0;
-                const suffix = originalText.replace(/[\d.]+/, '');
-                const isDecimal = originalText.includes('.');
-                const decimalPlaces = isDecimal ? target.toString().split('.')[1]?.length || 0 : 0;
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     const counters = document.querySelectorAll('.stat-number');
+        //     const animateCounter = (counter) => {
+        //         const originalText = counter.textContent;
+        //         // Extract number including decimal point
+        //         const numberMatch = originalText.match(/[\d.]+/);
+        //         const target = numberMatch ? parseFloat(numberMatch[0]) : 0;
+        //         const suffix = originalText.replace(/[\d.]+/, '');
+        //         const isDecimal = originalText.includes('.');
+        //         const decimalPlaces = isDecimal ? target.toString().split('.')[1]?.length || 0 : 0;
                 
-                let current = 0;
-                const increment = target / 10;
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= target) {
-                        counter.textContent = target.toFixed(decimalPlaces) + suffix;
-                        clearInterval(timer);
-                    } else {
-                        counter.textContent = current.toFixed(decimalPlaces) + suffix;
-                    }
-                }, 50);
-            };
-            const counterObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
-                        entry.target.classList.add('animated');
-                        animateCounter(entry.target);
-                    }
-                });
-            });
+        //         let current = 0;
+        //         const increment = target / 10;
+        //         const timer = setInterval(() => {
+        //             current += increment;
+        //             if (current >= target) {
+        //                 counter.textContent = target.toFixed(decimalPlaces) + suffix;
+        //                 clearInterval(timer);
+        //             } else {
+        //                 counter.textContent = current.toFixed(decimalPlaces) + suffix;
+        //             }
+        //         }, 50);
+        //     };
+        //     const counterObserver = new IntersectionObserver((entries) => {
+        //         entries.forEach(entry => {
+        //             if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+        //                 entry.target.classList.add('animated');
+        //                 animateCounter(entry.target);
+        //             }
+        //         });
+        //     });
 
-            counters.forEach(counter => counterObserver.observe(counter));
-        });
+        //     counters.forEach(counter => counterObserver.observe(counter));
+        // });
     </script>
 
 </body>
