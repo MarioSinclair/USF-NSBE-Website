@@ -831,6 +831,24 @@ nav a:hover, nav a.active {
     margin-bottom: 3rem;
 }
 
+.sponsor-grid {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+.sponsor-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.sponsor-logo {
+    width: 40%;
+    object-fit: contain;
+}
+
 .sponsor-content {
     max-width: 800px;
     margin: 0 auto;
@@ -841,6 +859,19 @@ nav a:hover, nav a.active {
 }
 
 @media (max-width: 800px) {
+
+    .sponsor-grid {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .sponsor-logo {
+        width: 80%;
+        object-fit: contain;
+    }
+    
+
     .sponsor-content {
         padding: 1rem;
     }
