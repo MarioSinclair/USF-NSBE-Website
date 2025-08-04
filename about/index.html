@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profiles of USF NSBE chapter members showcasing our diverse and dedicated engineering community.">
     <title>About Us | USF NSBE</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/nsbelogo.png">
+    <link rel="canonical" href="https://www.usfnsbe.com/about/">
 </head>
 <body>
 
     <!-- Header with Navigation -->
     <header>
         <div class="logo">
-            <a href="/"><img src="../images/usflogo.png" alt="Organization Logo"></a>
+            <a href="/"><img src="../images/usflogo.png" alt="USF Logo"></a>
         </div>
         <div class="logo">
-            <a href="/"><img src="../images/nsbelogo.png" alt="Organization Logo"></a>
+            <a href="/"><img src="../images/nsbelogo.png" alt="NSBE Logo"></a>
         </div>
         <nav>
             <ul class="desktop-nav">
@@ -26,7 +29,7 @@
                 <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
             </ul>
 
-            <div class="mobile-menu-toggle" id="burgerToggle">
+            <div class="mobile-menu-toggle" id="burgerToggle" role="button" aria-label="Toggle navigation menu" tabindex="0">
                 <div class="hamburger-lines">
                     <span class="line line-top"></span>
                     <span class="line line-middle"></span>
@@ -35,12 +38,14 @@
             </div>
 
             <div class="nav-menu" id="mobileMenu">
-                <li><a href="https://www.usfnsbe.com/">Home</a></li>
-                <li><a href="https://www.usfnsbe.com/about/" class="active">About Us</a></li>
-                <li><a href="https://www.usfnsbe.com/initiatives/">Initiatives</a></li>
-                <li><a href="https://www.usfnsbe.com/sponsors/">Sponsors</a></li>
-                <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
-                <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
+                <ul>
+                    <li><a href="https://www.usfnsbe.com/">Home</a></li>
+                    <li><a href="https://www.usfnsbe.com/about/" class="active">About Us</a></li>
+                    <li><a href="https://www.usfnsbe.com/initiatives/">Initiatives</a></li>
+                    <li><a href="https://www.usfnsbe.com/sponsors/">Sponsors</a></li>
+                    <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
+                    <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
+                </ul>
             </div>
         </nav>
     </header>>
@@ -509,28 +514,6 @@
             <p>&copy; 2025 NSBE USF Chapter. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        // Get references to the burger toggle and the mobile menu
-        const burgerToggle = document.getElementById('burgerToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        // Add an event listener to the burger toggle
-        burgerToggle.addEventListener('click', () => {
-            // Toggle the 'menu-open' class on both the burger icon and the menu itself
-            burgerToggle.classList.toggle('menu-open');
-            mobileMenu.classList.toggle('menu-open');
-        });
-
-        // Optional: Close menu when a link is clicked (better UX)
-        const menuLinks = mobileMenu.querySelectorAll('a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                burgerToggle.classList.remove('menu-open');
-                mobileMenu.classList.remove('menu-open');
-            });
-        });
-    </script>
-
+    <script src="/js/menu.js" defer></script>
 </body>
 </html>

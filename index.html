@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="USF NSBE Chapter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to the official website for the University of South Florida's chapter of the National Society of Black Engineers (NSBE). Find updates, event schedules, E-Board info, sponsorship information, and how to become a member!">
     <title>USF NSBE | Official USF Chapter</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="icon" href="./images/nsbelogo.png">
+    <link rel="canonical" href="https://www.usfnsbe.com/">
 </head>
 <body>
 
     <!-- Header -->
     <header>
         <div class="logo">
-            <a href="/"><img src="./images/usflogo.png" alt="Organization Logo"></a>
+            <a href="/"><img src="../images/usflogo.png" alt="USF Logo"></a>
         </div>
         <div class="logo">
-            <a href="/"><img src="./images/nsbelogo.png" alt="Organization Logo"></a>
+            <a href="/"><img src="../images/nsbelogo.png" alt="NSBE Logo"></a>
         </div>
         <nav>
             <ul class="desktop-nav">
@@ -28,7 +31,7 @@
                 <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
             </ul>
 
-            <div class="mobile-menu-toggle" id="burgerToggle">
+            <div class="mobile-menu-toggle" id="burgerToggle" role="button" aria-label="Toggle navigation menu" tabindex="0">
                 <div class="hamburger-lines">
                     <span class="line line-top"></span>
                     <span class="line line-middle"></span>
@@ -37,23 +40,25 @@
             </div>
 
             <div class="nav-menu" id="mobileMenu">
-                <li><a href="https://www.usfnsbe.com/" class="active">Home</a></li>
-                <li><a href="https://www.usfnsbe.com/about/">About Us</a></li>
-                <li><a href="https://www.usfnsbe.com/initiatives/">Initiatives</a></li>
-                <li><a href="https://www.usfnsbe.com/sponsors/">Sponsors</a></li>
-                <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
-                <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
+                <ul>
+                    <li><a href="https://www.usfnsbe.com/" class="active">Home</a></li>
+                    <li><a href="https://www.usfnsbe.com/about/">About Us</a></li>
+                    <li><a href="https://www.usfnsbe.com/initiatives/">Initiatives</a></li>
+                    <li><a href="https://www.usfnsbe.com/sponsors/">Sponsors</a></li>
+                    <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
+                    <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
+                </ul>
             </div>
         </nav>
     </header>
 
     <div class="hero-image-container">
-        <img src="images/hero.jpg" alt="Image Description">
-        <img src="./images/NSBE-banner.png" alt="NSBE Banner" class="img-banner">
+        <img loading="lazy" src="images/hero.jpg" alt="E-Board presenting at USF NSBE meeting">
+        <img loading="lazy" src="./images/NSBE-banner.png" alt="NSBE Banner" class="img-banner">
     </div>
      <!-- NSBE Mission Highlight -->
      <div class="nsbe-mission-highlight">
-        <span class="nsbe-mission-label">Our Mission</span>
+        <h1 class="nsbe-mission-label">Our Mission</h1>
         <blockquote class="nsbe-mission-quote">
           NSBE's mission is to increase the number of culturally responsible Black engineers who excel academically, succeed professionally, and positively impact the community.
         </blockquote>
@@ -62,7 +67,7 @@
     <section class="hero">
         <div class="hero-content">
             <div class="chapter-intro-card">
-                <h2 class="chapter-intro-title">USF Chapter</h2>
+                <h1 class="chapter-intro-title">USF Chapter</h1>
                 <p>
                     Our USF chapter actively upholds this mission through a variety of engaging programs and initiatives. We focus on fostering academic excellence, offering invaluable professional development opportunities, and implementing robust pre-college initiatives that inspire the next generation of STEM leaders. From technical workshops and career guidance to community outreach and leadership development, we strive to create a supportive and empowering environment for our members to thrive. Join us as we work to make a striking impact on both the engineering world and the broader community.
                 </p>
@@ -77,13 +82,13 @@
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="./images/eboard_1.jpg" alt="Featured story 1" class="highlight-image">
+                    <img loading="lazy" src="./images/eboard_1.jpg" alt="Featured story 1" class="highlight-image">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./images/eboard_2.jpg" alt="Featured story 2" class="highlight-image">
+                    <img loading="lazy" src="./images/eboard_2.jpg" alt="Featured story 2" class="highlight-image">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./images/eboard_3.jpg"  alt="Featured story 1" class="highlight-image">
+                    <img loading="lazy" src="./images/eboard_3.jpg"  alt="Featured story 1" class="highlight-image">
                 </div>
             </div>
             <div class="swiper-pagination"></div>

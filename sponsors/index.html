@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about the valued sponsors supporting the USF NSBE chapter and their commitment to fostering student success and professional growth.">
     <title>Sponsors | USF NSBE</title>
     <link rel="stylesheet" href="../css/style.css">
-
     <link rel="icon" href="../images/nsbelogo.png">
+    <link rel="canonical" href="https://www.usfnsbe.com/sponsors/">
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <a href="/"><img src="../images/usflogo.png" alt="Organization Logo"></a>
+            <a href="/"><img src="../images/usflogo.png" alt="USF Logo"></a>
         </div>
         <div class="logo">
-            <a href="/"><img src="../images/nsbelogo.png" alt="Organization Logo"></a>
+            <a href="/"><img src="../images/nsbelogo.png" alt="NSBE Logo"></a>
         </div>
         <nav>
             <ul class="desktop-nav">
@@ -35,12 +37,14 @@
             </div>
 
             <div class="nav-menu" id="mobileMenu">
-                <li><a href="https://www.usfnsbe.com/">Home</a></li>
-                <li><a href="https://www.usfnsbe.com/about/">About Us</a></li>
-                <li><a href="https://www.usfnsbe.com/initiatives/">Initiatives</a></li>
-                <li><a href="https://www.usfnsbe.com/sponsors/" class="active">Sponsors</a></li>
-                <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
-                <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
+                <ul>
+                    <li><a href="https://www.usfnsbe.com/">Home</a></li>
+                    <li><a href="https://www.usfnsbe.com/about/">About Us</a></li>
+                    <li><a href="https://www.usfnsbe.com/initiatives/">Initiatives</a></li>
+                    <li><a href="https://www.usfnsbe.com/sponsors/" class="active">Sponsors</a></li>
+                    <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
+                    <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -70,7 +74,7 @@
 
                     
                 </div> 
-                <a href="./USF_NSBE_Corporate_Sponsorship_25_26.pdf" class="button" download>Become a Sponsor!</a>
+                <a href="./NBSE_Sponsorship_Package_2025.pdf" class="button" download>Become a Sponsor!</a>
             </div>
         </div>
 
@@ -79,9 +83,9 @@
                 <h1>Our Sponsors</h1>
                 <div class="sponsor-grid">
                     <div class="sponsor-row">
-                        <img src="./images/HWlogo.png" alt="Sponsor 1" class="sponsor-logo"/>
-                        <img src="./images/DukeLogo.jpg" alt="Sponsor 2" class="sponsor-logo"/> 
-                        <img src="./images/bcc-logo.svg" alt="Sponsor 3" class="sponsor-logo"/>
+                        <img loading="lazy" src="./sponsor_images/HWlogo.png" alt="Sponsor 1" class="sponsor-logo"/>
+                        <img loading="lazy" src="./sponsor_images/DukeLogo.jpg" alt="Sponsor 2" class="sponsor-logo"/> 
+                        <img loading="lazy" src="./sponsor_images/bcc-logo.svg" alt="Sponsor 3" class="sponsor-logo"/>
                     </div>
                     </div>
                 </div>
@@ -237,62 +241,6 @@
             <p>&copy; 2025 NSBE USF Chapter. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        // Get references to the burger toggle and the mobile menu
-        const burgerToggle = document.getElementById('burgerToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        // Add an event listener to the burger toggle
-        burgerToggle.addEventListener('click', () => {
-            // Toggle the 'menu-open' class on both the burger icon and the menu itself
-            burgerToggle.classList.toggle('menu-open');
-            mobileMenu.classList.toggle('menu-open');
-        });
-
-        // Optional: Close menu when a link is clicked (better UX)
-        const menuLinks = mobileMenu.querySelectorAll('a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                burgerToggle.classList.remove('menu-open');
-                mobileMenu.classList.remove('menu-open');
-            });
-        });
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     const counters = document.querySelectorAll('.stat-number');
-        //     const animateCounter = (counter) => {
-        //         const originalText = counter.textContent;
-        //         // Extract number including decimal point
-        //         const numberMatch = originalText.match(/[\d.]+/);
-        //         const target = numberMatch ? parseFloat(numberMatch[0]) : 0;
-        //         const suffix = originalText.replace(/[\d.]+/, '');
-        //         const isDecimal = originalText.includes('.');
-        //         const decimalPlaces = isDecimal ? target.toString().split('.')[1]?.length || 0 : 0;
-                
-        //         let current = 0;
-        //         const increment = target / 10;
-        //         const timer = setInterval(() => {
-        //             current += increment;
-        //             if (current >= target) {
-        //                 counter.textContent = target.toFixed(decimalPlaces) + suffix;
-        //                 clearInterval(timer);
-        //             } else {
-        //                 counter.textContent = current.toFixed(decimalPlaces) + suffix;
-        //             }
-        //         }, 50);
-        //     };
-        //     const counterObserver = new IntersectionObserver((entries) => {
-        //         entries.forEach(entry => {
-        //             if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
-        //                 entry.target.classList.add('animated');
-        //                 animateCounter(entry.target);
-        //             }
-        //         });
-        //     });
-
-        //     counters.forEach(counter => counterObserver.observe(counter));
-        // });
-    </script>
-
+    <script src="/js/menu.js" defer></script>
 </body>
 </html>
