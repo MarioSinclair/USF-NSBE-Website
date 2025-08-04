@@ -142,29 +142,25 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper', {
-            // Optional parameters
-            loop: true, // Enables continuous loop mode
+            loop: true, 
             cssMode: true,
             autoplay: {
-                delay: 3000, // Autoplay delay in milliseconds (5 seconds)
-                disableOnInteraction: true, // Autoplay will not be disabled after user interactions (swipes)
+                delay: 3000,
+                disableOnInteraction: true,
             },
-            slidesPerView: 1, // Number of slides per view
-            spaceBetween: 0, // Space between slides (0 for full-width slides)
+            slidesPerView: 1, 
+            spaceBetween: 0,
             
-            // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
-                clickable: true, // Allows clicking on pagination bullets to navigate
+                clickable: true, 
             },
 
-            // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
 
-            // Accessibility features
             a11y: {
                 prevSlideMessage: 'Previous slide',
                 nextSlideMessage: 'Next slide',
