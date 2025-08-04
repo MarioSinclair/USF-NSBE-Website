@@ -138,29 +138,7 @@
             <p>&copy; 2025 NSBE USF Chapter. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        // Get references to the burger toggle and the mobile menu
-        const burgerToggle = document.getElementById('burgerToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        // Add an event listener to the burger toggle
-        burgerToggle.addEventListener('click', () => {
-            // Toggle the 'menu-open' class on both the burger icon and the menu itself
-            burgerToggle.classList.toggle('menu-open');
-            mobileMenu.classList.toggle('menu-open');
-        });
-
-        // Optional: Close menu when a link is clicked (better UX)
-        const menuLinks = mobileMenu.querySelectorAll('a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                burgerToggle.classList.remove('menu-open');
-                mobileMenu.classList.remove('menu-open');
-            });
-        });
-    </script>
-
+    <script src="/js/menu.js" defer></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper', {
