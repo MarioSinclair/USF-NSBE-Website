@@ -1165,7 +1165,7 @@ nav a:hover, nav a.active {
   margin-bottom: 1rem;
   letter-spacing: 0.05em;
   position: absolute;
-  top: -1.1rem;
+  top: -1.8rem;
   left: 50%;
   transform: translateX(-50%);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
