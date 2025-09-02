@@ -1244,6 +1244,8 @@ nav a:hover, nav a.active {
 
 .tier-card {
     background: white;
+    display: flex;
+    flex-direction: column;
     width: 20rem;
     border-radius: 20px;
     overflow: hidden;
@@ -1339,6 +1341,8 @@ nav a:hover, nav a.active {
     color: #64748b;
     font-style: italic;
     font-size: 0.95rem;
+    margin-top: auto;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .support-container {
