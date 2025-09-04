@@ -3,33 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Profiles of USF NSBE chapter members showcasing our diverse and dedicated engineering community.">
+    <meta name="description" content="Meet the dedicated leadership team of USF NSBE chapter. Learn about our executive board members, their backgrounds, and commitment to fostering engineering excellence and community impact.">
     <title>About Us | USF NSBE</title>
+    
+    <!-- Essential SEO Meta Tags -->
+    <meta name="keywords" content="USF NSBE leadership, NSBE executive board, University of South Florida engineering, black engineers leadership, engineering student organization, Tampa Bay engineering students, NSBE chapter officers">
+    <meta name="author" content="USF NSBE Chapter">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="About Us | USF NSBE">
+    <meta property="og:description" content="Meet the dedicated leadership team of USF NSBE chapter. Learn about our executive board members, their backgrounds, and commitment to fostering engineering excellence and community impact.">
+    <meta property="og:image" content="https://www.usfnsbe.com/images/nsbelogo.png">
+    <meta property="og:url" content="https://www.usfnsbe.com/about/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="USF NSBE">
+    
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/nsbelogo.png">
     <link rel="canonical" href="https://www.usfnsbe.com/about/">
 </head>
 <body>
 
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header with Navigation -->
     <header>
         <div class="logo">
-            <a href="/"><img src="../images/usflogo.png" alt="USF Logo"></a>
+            <a href="/" aria-label="Go to USF NSBE homepage"><img src="../images/usflogo.png" alt="University of South Florida Logo" fetchpriority="high"></a>
         </div>
         <div class="logo">
-            <a href="/"><img src="../images/nsbelogo.png" alt="NSBE Logo"></a>
+            <a href="/" aria-label="Go to USF NSBE homepage"><img src="../images/nsbelogo.png" alt="National Society of Black Engineers Logo" fetchpriority="high"></a>
         </div>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul class="desktop-nav">
                 <li><a href="https://www.usfnsbe.com/">Home</a></li>
-                <li><a href="https://www.usfnsbe.com/about/" class="active">About Us</a></li>
+                <li><a href="https://www.usfnsbe.com/about/" class="active" aria-current="page">About Us</a></li>
                 <li><a href="https://www.usfnsbe.com/initiatives/">Initiatives</a></li>
                 <li><a href="https://www.usfnsbe.com/sponsors/">Sponsors</a></li>
                 <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
                 <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
             </ul>
 
-            <div class="mobile-menu-toggle" id="burgerToggle" role="button" aria-label="Toggle navigation menu" tabindex="0">
+            <div class="mobile-menu-toggle" id="burgerToggle" role="button" aria-label="Toggle navigation menu" tabindex="0" aria-expanded="false">
                 <div class="hamburger-lines">
                     <span class="line line-top"></span>
                     <span class="line line-middle"></span>
@@ -37,10 +54,10 @@
                 </div>
             </div>
 
-            <div class="nav-menu" id="mobileMenu">
+            <div class="nav-menu" id="mobileMenu" aria-hidden="true">
                 <ul>
                     <li><a href="https://www.usfnsbe.com/">Home</a></li>
-                    <li><a href="https://www.usfnsbe.com/about/" class="active">About Us</a></li>
+                    <li><a href="https://www.usfnsbe.com/about/" class="active" aria-current="page">About Us</a></li>
                     <li><a href="https://www.usfnsbe.com/initiatives/">Initiatives</a></li>
                     <li><a href="https://www.usfnsbe.com/sponsors/">Sponsors</a></li>
                     <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
@@ -48,432 +65,435 @@
                 </ul>
             </div>
         </nav>
-    </header>>
+    </header>
 
     <!-- Team Members -->
-    <section class="team">
-        <div class="team-heading">
-            <h1 class="about-heading">Leadership Team</h1>
-            <p class="heading">Meet our 2025-2026 NSBE Board Members!</p>
-        </div>
-        <div class="team-container">
-            <h2 class="zone-title">Adminstrative Zone</h2>
-            <div class="zone">  
-                <div class="team-member lead">
-                    <div class="member-image">
-                        <img src="images/1.jpg" alt="Member Name" class="member-img">
-                    </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Gerald Oduro-Nuamah</h3>
-                        <p class="member-title">President</p>
-                        <p class="member-bio">
-                            Computer Science '26
-                        </p>        
-                        <div class="member-icons">
-                            <a href="mailto:president.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/geraldoduro/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
+    <main id="main-content">
+        <section class="team" aria-label="USF NSBE Leadership Team">
+            <div class="team-heading">
+                <h1>Leadership Team</h1>
+                <p class="heading">Meet our 2025-2026 NSBE Board Members!</p>
+            </div>
+            <div class="team-container">
+                <h2 class="zone-title">Administrative Zone</h2>
+                <div class="zone" role="region" aria-label="Administrative Leadership">  
+                    <div class="team-member lead">
+                        <div class="member-image">
+                            <img src="images/1.jpg" alt="Gerald Oduro-Nuamah" class="member-img" loading="lazy">
                         </div>
-                    </div>  
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/3.jpg" alt="Member Name" class="member-img">
+                        <div class="member-info">
+                            <h3 class="member-name">Gerald Oduro-Nuamah</h3>
+                            <p class="member-title">President</p>
+                            <p class="member-bio">
+                                Computer Science '26
+                            </p>        
+                            <div class="member-icons">
+                                <a href="mailto:president.usf.nsbe@gmail.com" aria-label="Email Gerald Oduro-Nuamah">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/geraldoduro/" target="_blank" rel="noopener noreferrer" aria-label="Gerald Oduro-Nuamah's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>
+                        </div>  
                     </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Olachi Onyejiaka</h3>
-                        <p class="member-title">Vice President</p>
-                        <p class="member-bio">
-                            Biomedical Engineering '26
-                        </p>
-                        <div class="member-icons">
-                            <a href="mailto:vicepresident.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/jordanonyejiaka/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>     
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/4.jpg" alt="Member Name" class="member-img">
-                    </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Nicholas Christie</h3>
-                        <p class="member-title">Treasurer</p>
-                        <p class="member-bio">
-                            Civil Engineering '27 
-                        </p>  
-                        <div class="member-icons">
-                            <a href="mailto:treasurer.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/-nicholas-christie-/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>         
-                    </div>  
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/5.jpg" alt="Member Name" class="member-img">
-                    </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Lizette Tanguaka</h3>
-                        <p class="member-title">Parliamentarian</p>
-                        <p class="member-bio">
-                            Information Technology '26
-                        </p>  
-                        <div class="member-icons">
-                            <a href="mailto:parliamentarian.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/lizettetanguaka/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>      
-                    </div>  
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/14.jpg" alt="Member Name" class="member-img">
-                    </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Deborah Olowofela</h3>
-                        <p class="member-title">Secretary</p>
-                        <p class="member-bio">
-                            Information Technology '27 
-                        </p>  
-                        <div class="member-icons">
-                            <a href="mailto:secretary.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/deboraholowofela/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>          
-                    </div>  
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/6.jpg" alt="Member Name" class="member-img">
-                    </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Jeremy Fullwood</h3>
-                        <p class="member-title">Senator</p>
-                        <p class="member-bio">
-                            Civil Engineering '27
-                        </p>      
-                        <div class="member-icons">
-                            <a href="mailto:mccambassador.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/jeremy-fullwood-5608a6247/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>              
-                    </div>  
-                </div>
-            </div>
-            <h2 class="zone-title">Membership Zone</h2>
-            <div class="zone">   
-                <div class="team-member lead">
-                    <div class="member-image">
-                        <img src="images/3.jpg" alt="Member Name" class="member-img">
-                    </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Olachi Onyejiaka</h3>
-                        <p class="member-title">Vice President</p>
-                        <p class="member-bio">
-                            Biomedical Engineering '26
-                        </p>
-                        <div class="member-icons">
-                            <a href="mailto:vicepresident.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/jordanonyejiaka/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>     
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/8.jpg" alt="Member Name" class="member-img">
-                    </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Akeelah Ankle</h3>
-                        <p class="member-title">Membership Chair</p>
-                        <p class="member-bio">
-                            Environmental Engineering '28
-                        </p>   
-                        <div class="member-icons">
-                            <a href="mailto:membership.usf.nsbe@gmail.com">
-                                <div class="member-icon">✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/akeelah-ankle-3390b934b/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/3.jpg" alt="Olachi Onyejiaka" class="member-img" loading="lazy">
                         </div>
-                    </div>  
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/eg_profile.png" alt="Member Name" class="member-img">
-                    </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Tiodene Christie</h3>
-                        <p class="member-title">Academic Excellence Chair</p>
-                        <p class="member-bio">
-                            Electrical Engineering '27 
-                        </p>        
-                        <div class="member-icons">
-                            <a href="mailto:academicexcellence.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/tiodene-christie-b55aa1294/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>             
-                    </div>  
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/9.jpg" alt="Member Name" class="member-img">
-                    </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Kalen Fleming</h3>
-                        <p class="member-title">Professional Development Chair</p>
-                        <p class="member-bio">
-                            Industrial Engineering '27
-                        </p> 
-                        <div class="member-icons">
-                            <a href="mailto:professional.devchair.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/kalenfleming/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>              
-                    </div>  
-                </div> 
-            </div>
-            <h2 class="zone-title">Communications Zone</h2>
-            <div class="zone">
-                <div class="team-member lead">
-                    <div class="member-image">
-                        <img src="images/14.jpg" alt="Member Name" class="member-img">
-                    </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Deborah Olowofela</h3>
-                        <p class="member-title">Secretary</p>
-                        <p class="member-bio">
-                            Information Technology '27 
-                        </p>  
-                        <div class="member-icons">
-                            <a href="mailto:secretary.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/deboraholowofela/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>          
-                    </div>  
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/13.jpg" alt="Member Name" class="member-img">
-                    </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Hannah-Camille Rowe</h3>
-                        <p class="member-title">Publications Chair</p>
-                        <p class="member-bio">
-                            Electrical Engineering '27
-                        </p>   
-                        <div class="member-icons">
-                            <a href="mailto:publications.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/hannah-camillerowe/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
+                        <div class="member-info">
+                            <h3 class="member-name">Olachi Onyejiaka</h3>
+                            <p class="member-title">Vice President</p>
+                            <p class="member-bio">
+                                Biomedical Engineering '26
+                            </p>
+                            <div class="member-icons">
+                                <a href="mailto:vicepresident.usf.nsbe@gmail.com" aria-label="Email Olachi Onyejiaka">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/jordanonyejiaka/" target="_blank" rel="noopener noreferrer" aria-label="Olachi Onyejiaka's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>     
                         </div>
-                    </div>  
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/eg_profile.png" alt="Member Name" class="member-img">
                     </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Joanna Johnson</h3>
-                        <p class="member-title">Co-Publications Chair</p>
-                        <p class="member-bio">
-                            Computer Science '27
-                        </p>
-                        <div class="member-icons">
-                            <a href="mailto:publications.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/joanna-j-2b6681280/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/4.jpg" alt="Nicholas Christie" class="member-img" loading="lazy">
                         </div>
-                    </div>  
-                </div>
-            </div>
-            <h2 class="zone-title">Programs Zone</h2>
-            <div class="zone">  
-                <div class="team-member lead">
-                    <div class="member-image">
-                        <img src="./images/10.jpg" alt="Member Name" class="member-img">
+                        <div class="member-info">
+                            <h3 class="member-name">Nicholas Christie</h3>
+                            <p class="member-title">Treasurer</p>
+                            <p class="member-bio">
+                                Civil Engineering '27 
+                            </p>  
+                            <div class="member-icons">
+                                <a href="mailto:treasurer.usf.nsbe@gmail.com" aria-label="Email Nicholas Christie">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/-nicholas-christie-/" target="_blank" rel="noopener noreferrer" aria-label="Nicholas Christie's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>         
+                        </div>  
                     </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Dontavious Ellis</h3>
-                        <p class="member-title">Programs Chair</p>
-                        <p class="member-bio">
-                            Electrical Engineering '28
-                        </p>   
-                        <div class="member-icons">
-                            <a href="mailto:programs.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/dontavious-ellis-62454631b/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>                
-                    </div>  
-                </div>                    
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/2.jpg" alt="Member Name" class="member-img">
-                    </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Isaac Washington</h3>
-                        <p class="member-title">Pre College Initiative Chair</p>
-                        <p class="member-bio">
-                            Civil Engineering (Masters) '27 
-                        </p>
-                        <div class="member-icons">
-                            <a href="mailto:pci.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/isaacbw/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/5.jpg" alt="Lizette Tanguaka" class="member-img" loading="lazy">
                         </div>
-                    </div>  
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/11.jpg" alt="Member Name" class="member-img">
+                        <div class="member-info">
+                            <h3 class="member-name">Lizette Tanguaka</h3>
+                            <p class="member-title">Parliamentarian</p>
+                            <p class="member-bio">
+                                Information Technology '26
+                            </p>  
+                            <div class="member-icons">
+                                <a href="mailto:parliamentarian.usf.nsbe@gmail.com" aria-label="Email Lizette Tanguaka">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/lizettetanguaka/" target="_blank" rel="noopener noreferrer" aria-label="Lizette Tanguaka's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>      
+                        </div>  
                     </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Amaya Austin</h3>
-                        <p class="member-title">T.O.R.C.H. Chair</p>
-                        <p class="member-bio">
-                            Civil Engineering '27
-                        </p>             
-                        <div class="member-icons">
-                            <a href="mailto:Torch.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/amaya-austin-077a0a267/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>        
-                    </div>  
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/eg_profile.png" alt="Member Name" class="member-img">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/14.jpg" alt="Deborah Olowofela" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Deborah Olowofela</h3>
+                            <p class="member-title">Secretary</p>
+                            <p class="member-bio">
+                                Information Technology '27 
+                            </p>  
+                            <div class="member-icons">
+                                <a href="mailto:secretary.usf.nsbe@gmail.com" aria-label="Email Deborah Olowofela">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/deboraholowofela/" target="_blank" rel="noopener noreferrer" aria-label="Deborah Olowofela's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>          
+                        </div>  
                     </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Liyana Samson</h3>
-                        <p class="member-title">Co-Programs Chair</p>
-                        <p class="member-bio">
-                            Electrical Engineering '26
-                        </p>   
-                        <div class="member-icons">
-                            <a href="mailto:program.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>          
-                    </div>  
-                </div>     
-            </div>
-            </div>
-            <h2 class="zone-title">Finance Zone</h2>
-            <div class="zone">
-                <div class="team-member lead">
-                    <div class="member-image">
-                        <img src="images/4.jpg" alt="Member Name" class="member-img">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/6.jpg" alt="Jeremy Fullwood" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Jeremy Fullwood</h3>
+                            <p class="member-title">Senator</p>
+                            <p class="member-bio">
+                                Civil Engineering '27
+                            </p>      
+                            <div class="member-icons">
+                                <a href="mailto:mccambassador.usf.nsbe@gmail.com" aria-label="Email Jeremy Fullwood">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/jeremy-fullwood-5608a6247/" target="_blank" rel="noopener noreferrer" aria-label="Jeremy Fullwood's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>              
+                        </div>  
                     </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Nicholas Christie</h3>
-                        <p class="member-title">Treasurer</p>
-                        <p class="member-bio">
-                            Civil Engineering '27 
-                        </p>  
-                        <div class="member-icons">
-                            <a href="mailto:treasurer.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/-nicholas-christie-/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>         
-                    </div>  
                 </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/7.jpg" alt="Member Name" class="member-img">
+                <h2 class="zone-title">Membership Zone</h2>
+                <div class="zone" role="region" aria-label="Membership Leadership">
+                    <div class="team-member lead">
+                        <div class="member-image">
+                            <img src="images/3.jpg" alt="Olachi Onyejiaka" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Olachi Onyejiaka</h3>
+                            <p class="member-title">Vice President</p>
+                            <p class="member-bio">
+                                Biomedical Engineering '26
+                            </p>
+                            <div class="member-icons">
+                                <a href="mailto:vicepresident.usf.nsbe@gmail.com" aria-label="Email Olachi Onyejiaka">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/jordanonyejiaka/" target="_blank" rel="noopener noreferrer" aria-label="Olachi Onyejiaka's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>     
+                        </div>
                     </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Mario Sinclair</h3>
-                        <p class="member-title">Conference Planning Chair</p>
-                        <p class="member-bio">
-                            Computer Science '27
-                        </p>           
-                        <div class="member-icons">
-                            <a href="mailto:conferenceplanning.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/mario-sinclair/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>         
-                    </div>  
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="images/12.jpg" alt="Member Name" class="member-img">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/8.jpg" alt="Akeelah Ankle" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Akeelah Ankle</h3>
+                            <p class="member-title">Membership Chair</p>
+                            <p class="member-bio">
+                                Environmental Engineering '28
+                            </p>   
+                            <div class="member-icons">
+                                <a href="mailto:membership.usf.nsbe@gmail.com" aria-label="Email Akeelah Ankle">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/akeelah-ankle-3390b934b/" target="_blank" rel="noopener noreferrer" aria-label="Akeelah Ankle's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>
+                        </div>  
                     </div>
-                    <div class="member-info">
-                        <h3 class="member-name">Sebastian Wagnac</h3>
-                        <p class="member-title">Fundraising Chair</p>
-                        <p class="member-bio">
-                            Computer Engineering '27 
-                        </p>  
-                        <div class="member-icons">
-                            <a href="mailto:fundraisingchair.usf.nsbe@gmail.com">
-                                <div class="member-icon" >✉️ Email</div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/sebastianwagnac1/" target="_blank">
-                                <div class="member-icon">🔗 LinkedIn</div>
-                            </a>
-                        </div>         
-                    </div>  
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/15.jpg" alt="Tiodene Christie" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Tiodene Christie</h3>
+                            <p class="member-title">Academic Excellence Chair</p>
+                            <p class="member-bio">
+                                Electrical Engineering '27 
+                            </p>        
+                            <div class="member-icons">
+                                <a href="mailto:academicexcellence.usf.nsbe@gmail.com" aria-label="Email Tiodene Christie">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/tiodene-christie-b55aa1294/" target="_blank" rel="noopener noreferrer" aria-label="Tiodene Christie's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>             
+                        </div>  
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/9.jpg" alt="Kalen Fleming" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Kalen Fleming</h3>
+                            <p class="member-title">Professional Development Chair</p>
+                            <p class="member-bio">
+                                Industrial Engineering '27
+                            </p> 
+                            <div class="member-icons">
+                                <a href="mailto:professional.devchair.usf.nsbe@gmail.com" aria-label="Email Kalen Fleming">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/kalenfleming/" target="_blank" rel="noopener noreferrer" aria-label="Kalen Fleming's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>              
+                        </div>  
+                    </div> 
                 </div>
-            </div>
-    </section>
+                <h2 class="zone-title">Communications Zone</h2>
+                <div class="zone" role="region" aria-label="Communications Leadership">
+                    <div class="team-member lead">
+                        <div class="member-image">
+                            <img src="images/14.jpg" alt="Deborah Olowofela" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Deborah Olowofela</h3>
+                            <p class="member-title">Secretary</p>
+                            <p class="member-bio">
+                                Information Technology '27 
+                            </p>  
+                            <div class="member-icons">
+                                <a href="mailto:secretary.usf.nsbe@gmail.com" aria-label="Email Deborah Olowofela">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/deboraholowofela/" target="_blank" rel="noopener noreferrer" aria-label="Deborah Olowofela's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>          
+                        </div>  
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/13.jpg" alt="Hannah-Camille Rowe" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Hannah-Camille Rowe</h3>
+                            <p class="member-title">Publications Chair</p>
+                            <p class="member-bio">
+                                Electrical Engineering '27
+                            </p>   
+                            <div class="member-icons">
+                                <a href="mailto:publications.usf.nsbe@gmail.com" aria-label="Email Hannah-Camille Rowe">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/hannah-camillerowe/" target="_blank" rel="noopener noreferrer" aria-label="Hannah-Camille Rowe's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/16.jpg" alt="Joanna Johnson" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Joanna Johnson</h3>
+                            <p class="member-title">Co-Publications Chair</p>
+                            <p class="member-bio">
+                                Computer Science '27
+                            </p>
+                            <div class="member-icons">
+                                <a href="mailto:publications.usf.nsbe@gmail.com" aria-label="Email Joanna Johnson">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/joanna-j-2b6681280/" target="_blank" rel="noopener noreferrer" aria-label="Joanna Johnson's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <h2 class="zone-title">Programs Zone</h2>
+                <div class="zone" role="region" aria-label="Programs Leadership">
+                    <div class="team-member lead">
+                        <div class="member-image">
+                            <img src="./images/10.jpg" alt="Dontavious Ellis" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Dontavious Ellis</h3>
+                            <p class="member-title">Programs Chair</p>
+                            <p class="member-bio">
+                                Electrical Engineering '28
+                            </p>   
+                            <div class="member-icons">
+                                <a href="mailto:programs.usf.nsbe@gmail.com" aria-label="Email Dontavious Ellis">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/dontavious-ellis-62454631b/" target="_blank" rel="noopener noreferrer" aria-label="Dontavious Ellis's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>                
+                        </div>  
+                    </div>                    
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/2.jpg" alt="Isaac Washington" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Isaac Washington</h3>
+                            <p class="member-title">Pre College Initiative Chair</p>
+                            <p class="member-bio">
+                                Civil Engineering (Masters) '27 
+                            </p>
+                            <div class="member-icons">
+                                <a href="mailto:pci.usf.nsbe@gmail.com" aria-label="Email Isaac Washington">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/isaacbw/" target="_blank" rel="noopener noreferrer" aria-label="Isaac Washington's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/11.jpg" alt="Amaya Austin" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Amaya Austin</h3>
+                            <p class="member-title">T.O.R.C.H. Chair</p>
+                            <p class="member-bio">
+                                Civil Engineering '27
+                            </p>             
+                            <div class="member-icons">
+                                <a href="mailto:Torch.usf.nsbe@gmail.com" aria-label="Email Amaya Austin">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/amaya-austin-077a0a267/" target="_blank" rel="noopener noreferrer" aria-label="Amaya Austin's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>        
+                        </div>  
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/eg_profile.png" alt="Liyana Samson" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Liyana Samson</h3>
+                            <p class="member-title">Co-Programs Chair</p>
+                            <p class="member-bio">
+                                Electrical Engineering '26
+                            </p>   
+                            <div class="member-icons">
+                                <a href="mailto:program.usf.nsbe@gmail.com" aria-label="Email Liyana Samson">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="" aria-label="Liyana Samson's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>          
+                        </div>  
+                    </div>     
+                </div>
+                </div>
+                <h2 class="zone-title">Finance Zone</h2>
+                <div class="zone" role="region" aria-label="Finance Leadership">
+                    <div class="team-member lead">
+                        <div class="member-image">
+                            <img src="images/4.jpg" alt="Nicholas Christie" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Nicholas Christie</h3>
+                            <p class="member-title">Treasurer</p>
+                            <p class="member-bio">
+                                Civil Engineering '27 
+                            </p>  
+                            <div class="member-icons">
+                                <a href="mailto:treasurer.usf.nsbe@gmail.com" aria-label="Email Nicholas Christie">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/-nicholas-christie-/" target="_blank" rel="noopener noreferrer" aria-label="Nicholas Christie's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>         
+                        </div>  
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/7.jpg" alt="Mario Sinclair" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Mario Sinclair</h3>
+                            <p class="member-title">Conference Planning Chair</p>
+                            <p class="member-bio">
+                                Computer Science '27
+                            </p>           
+                            <div class="member-icons">
+                                <a href="mailto:conferenceplanning.usf.nsbe@gmail.com" aria-label="Email Mario Sinclair">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mario-sinclair/" target="_blank" rel="noopener noreferrer" aria-label="Mario Sinclair's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>         
+                        </div>  
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/12.jpg" alt="Sebastian Wagnac" class="member-img" loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Sebastian Wagnac</h3>
+                            <p class="member-title">Fundraising Chair</p>
+                            <p class="member-bio">
+                                Computer Engineering '27 
+                            </p>  
+                            <div class="member-icons">
+                                <a href="mailto:fundraisingchair.usf.nsbe@gmail.com" aria-label="Email Sebastian Wagnac">
+                                    <div class="member-icon">✉️ Email</div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/sebastianwagnac1/" target="_blank" rel="noopener noreferrer" aria-label="Sebastian Wagnac's LinkedIn profile">
+                                    <div class="member-icon">🔗 LinkedIn</div>
+                                </a>
+                            </div>         
+                        </div>  
+                    </div>
+                </div>
+            </section>
+
+    </main>
 
     <footer class="modern-footer">
         <div class="footer-container">
@@ -481,7 +501,7 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="https://www.usfnsbe.com/">Home</a></li>
-                    <li><a href="https://www.usfnsbe.com/about/">About Us</a></li>
+                    <li><a href="https://www.usfnsbe.com/about/" class="active" aria-current="page">About Us</a></li>
                     <li><a href="https://www.usfnsbe.com/initiatives/">Initiatives</a></li>
                     <li><a href="https://www.usfnsbe.com/sponsors/">Sponsors</a></li>
                     <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
@@ -492,10 +512,10 @@
             <div class="footer-section">
                 <h3>Connect With Us</h3>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/usfnsbe" target="_blank" class="social-link">
+                    <a href="https://www.instagram.com/usfnsbe" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
                         <span>Instagram</span>
                     </a>
-                    <a href="https://www.linkedin.com/company/nsbe-usf-chapter" target="_blank" class="social-link">
+                    <a href="https://www.linkedin.com/company/nsbe-usf-chapter" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Connect with us on LinkedIn">
                         <span>LinkedIn</span>
                     </a>
                 </div>
@@ -504,7 +524,7 @@
             <div class="footer-section">
                 <h3>Contact Info</h3>
                 <div class="contact-details">
-                    <a href="mailto:vicepresident.usf.nsbe@gmail.com" target="_blank" class="social-link">
+                    <a href="mailto:vicepresident.usf.nsbe@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Email us">
                         <span>Email</span>
                     </a>
                 </div>

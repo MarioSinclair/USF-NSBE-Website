@@ -5,30 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn about the valued sponsors supporting the USF NSBE chapter and their commitment to fostering student success and professional growth.">
     <title>Sponsors | USF NSBE</title>
+    
+    <!-- Essential SEO Meta Tags -->
+    <meta name="keywords" content="USF NSBE, sponsors, sponsorship, engineering, black engineers, student organization, corporate partnership">
+    <meta name="author" content="USF NSBE Chapter">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Sponsors | USF NSBE">
+    <meta property="og:description" content="Learn about the valued sponsors supporting the USF NSBE chapter and their commitment to fostering student success and professional growth.">
+    <meta property="og:image" content="https://www.usfnsbe.com/images/nsbelogo.png">
+    <meta property="og:url" content="https://www.usfnsbe.com/sponsors/">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/nsbelogo.png">
     <link rel="canonical" href="https://www.usfnsbe.com/sponsors/">
 </head>
 <body>
 
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
         <div class="logo">
-            <a href="/"><img src="../images/usflogo.png" alt="USF Logo"></a>
+            <a href="/" aria-label="Go to USF NSBE homepage"><img src="../images/usflogo.png" alt="University of South Florida Logo"></a>
         </div>
         <div class="logo">
-            <a href="/"><img src="../images/nsbelogo.png" alt="NSBE Logo"></a>
+            <a href="/" aria-label="Go to USF NSBE homepage"><img src="../images/nsbelogo.png" alt="National Society of Black Engineers Logo"></a>
         </div>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul class="desktop-nav">
                 <li><a href="https://www.usfnsbe.com/">Home</a></li>
                 <li><a href="https://www.usfnsbe.com/about/">About Us</a></li>
                 <li><a href="https://www.usfnsbe.com/initiatives/">Initiatives</a></li>
-                <li><a href="https://www.usfnsbe.com/sponsors/" class="active">Sponsors</a></li>
+                <li><a href="https://www.usfnsbe.com/sponsors/" class="active" aria-current="page">Sponsors</a></li>
                 <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
                 <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
             </ul>
 
-            <div class="mobile-menu-toggle" id="burgerToggle">
+            <div class="mobile-menu-toggle" id="burgerToggle" aria-label="Toggle mobile menu" aria-expanded="false">
                 <div class="hamburger-lines">
                     <span class="line line-top"></span>
                     <span class="line line-middle"></span>
@@ -36,12 +52,12 @@
                 </div>
             </div>
 
-            <div class="nav-menu" id="mobileMenu">
+            <div class="nav-menu" id="mobileMenu" aria-hidden="true">
                 <ul>
                     <li><a href="https://www.usfnsbe.com/">Home</a></li>
                     <li><a href="https://www.usfnsbe.com/about/">About Us</a></li>
                     <li><a href="https://www.usfnsbe.com/initiatives/">Initiatives</a></li>
-                    <li><a href="https://www.usfnsbe.com/sponsors/" class="active">Sponsors</a></li>
+                    <li><a href="https://www.usfnsbe.com/sponsors/" class="active" aria-current="page">Sponsors</a></li>
                     <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
                     <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
                 </ul>
@@ -49,166 +65,163 @@
         </nav>
     </header>
 
-    <section class="wwad">
-        <div class="wwad-container">
-            <div class="sponsor-content">
-                <h1>Partner With Excellence</h1>
-                <p class="heading">Empower future Black engineers and elevate your brand by partnering with USF NSBE!</p>
-                <div class="stats-row">
-                    <div class="stat-item">
-                        <span class="stat-number">380+</span>
-                        <span class="stat-label">Active Members</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">3.52</span>
-                        <span class="stat-label">Average GPA</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">90%</span>
-                        <span class="stat-label">Seeking internships</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Annual Event Attendance</span>
-                    </div>
+    <main id="main-content">
+        <section class="wwad">
+            <div class="wwad-container">
+                <div class="sponsor-content">
+                    <h1>Partner With Excellence</h1>
+                    <p class="heading">Empower future Black engineers and elevate your brand by partnering with USF NSBE!</p>
+                    <div class="stats-row" role="region" aria-label="Chapter Statistics">
+                        <div class="stat-item">
+                            <span class="stat-number" aria-label="Over 380">380+</span>
+                            <span class="stat-label">Active Members</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" aria-label="3 point 52">3.52</span>
+                            <span class="stat-label">Average GPA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" aria-label="90 percent">90%</span>
+                            <span class="stat-label">Seeking internships</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" aria-label="Over 500">500+</span>
+                            <span class="stat-label">Annual Event Attendance</span>
+                        </div>
+                    </div> 
+                    <a href="./NBSE_Sponsorship_Package_2025.pdf" class="button" download aria-label="Download sponsorship package PDF">View Our Sponsorship Package 2025</a>
+                </div>
+            </div>
 
-                    
-                </div> 
-                <a href="./NBSE_Sponsorship_Package_2025.pdf" class="button" download>View Our Sponsorship Package 2025</a>
-            </div>
-        </div>
-
-        <div class="sponsor">
-            <div class="container"> 
-                <h1>Our Sponsors</h1>
-                <div class="sponsor-grid">
-                    <div class="sponsor-row">
-                        <img loading="lazy" src="./sponsor_images/HWlogo.png" alt="Sponsor 1" class="sponsor-logo"/>
-                        <img loading="lazy" src="./sponsor_images/DukeLogo.jpg" alt="Sponsor 2" class="sponsor-logo"/> 
-                        <img loading="lazy" src="./sponsor_images/bcc-logo.svg" alt="Sponsor 3" class="sponsor-logo"/>
-                    </div>
+            <div class="sponsor">
+                <div class="container"> 
+                    <h1>Our Sponsors</h1>
+                    <div class="sponsor-grid" role="region" aria-label="Current Sponsors">
+                        <div class="sponsor-row">
+                            <img loading="lazy" src="./sponsor_images/HWlogo.png" alt="Honeywell Corporation Logo" class="sponsor-logo"/>
+                            <img loading="lazy" src="./sponsor_images/DukeLogo.jpg" alt="Duke Energy Logo" class="sponsor-logo"/> 
+                            <img loading="lazy" src="./sponsor_images/bcc-logo.svg" alt="BCC Organization Logo" class="sponsor-logo"/>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <h1 class="sponsor-title">Sponsorship Tiers</h1>
-                <div class="tiers-grid">
-                    <div class="tier-card platinum">
-                        <div class="tier-header">
-                            <h4>Platinum</h4>
-                            <div class="tier-price">$7,500</div>
+                <div class="container">
+                    <h1 class="sponsor-title">Sponsorship Tiers</h1>
+                    <div class="tiers-grid" role="region" aria-label="Sponsorship Tiers">
+                        <div class="tier-card platinum">
+                            <div class="tier-header">
+                                <h4>Platinum</h4>
+                                <div class="tier-price">$7,500</div>
+                            </div>
+                            <div class="tier-benefits">
+                                <div class="tier-benefit">✓ Scholarship/Award Sponsorship</div>
+                                <div class="tier-benefit">✓ Social Media & Website Spotlight</div>
+                                <div class="tier-benefit">✓ Priority invitation to General Body Meetings</div>
+                                <div class="tier-benefit">✓ Monthly Newsletter Feature</div>
+                                <div class="tier-benefit">✓ Merchandise Branding</div>
+                                <div class="tier-benefit">✓ Digital Resume Book</div>
+                            </div>
+                            <div class="tier-highlight">Maximum visibility and impact</div>
                         </div>
-                        <div class="tier-benefits">
-                            <div class="tier-benefit">✓ Scholarship/Award Sponsorship</div>
-                            <div class="tier-benefit">✓ Social Media & Website Spotlight</div>
-                            <div class="tier-benefit">✓ Priority invitation to General Body Meetings</div>
-                            <div class="tier-benefit">✓ Monthly Newsletter Feature</div>
-                            <div class="tier-benefit">✓ Merchandise Branding</div>
-                            <div class="tier-benefit">✓ Digital Resume Book</div>
-                            
+                        
+                        <div class="tier-card gold">
+                            <div class="tier-header">
+                                <h4>Gold</h4>
+                                <div class="tier-price">$5,000</div>
+                            </div>
+                            <div class="tier-benefits">
+                                <div class="tier-benefit">✓ Social Media & Website Spotlight</div>
+                                <div class="tier-benefit">✓ Priority invitation to General Body Meetings</div>
+                                <div class="tier-benefit">✓ Monthly Newsletter Feature</div>
+                                <div class="tier-benefit">✓ Merchandise Branding</div>
+                                <div class="tier-benefit">✓ Digital Resume Book</div>
+                            </div>
+                            <div class="tier-highlight">Comprehensive partnership</div>
                         </div>
-                        <div class="tier-highlight">Maximum visibility and impact</div>
-                    </div>
-                    
-                    <div class="tier-card gold">
-                        <div class="tier-header">
-                            <h4>Gold</h4>
-                            <div class="tier-price">$5,000</div>
+                        
+                        <div class="tier-card silver">
+                            <div class="tier-header">
+                                <h4>Silver</h4>
+                                <div class="tier-price">$2,500</div>
+                            </div>
+                            <div class="tier-benefits">
+                                <div class="tier-benefit">✓ Priority invitation to General Body Meetings</div>
+                                <div class="tier-benefit">✓ Monthly Newsletter Feature</div>
+                                <div class="tier-benefit">✓ Merchandise Branding</div>
+                                <div class="tier-benefit">✓ Digital Resume Book</div>
+                            </div>
+                            <div class="tier-highlight">Strong brand presence</div>
                         </div>
-                        <div class="tier-benefits">
-                            <div class="tier-benefit">✓ Social Media & Website Spotlight</div>
-                            <div class="tier-benefit">✓ Priority invitation to General Body Meetings</div>
-                            <div class="tier-benefit">✓ Monthly Newsletter Feature</div>
-                            <div class="tier-benefit">✓ Merchandise Branding</div>
-                            <div class="tier-benefit">✓ Digital Resume Book</div>
+                        
+                        <div class="tier-card bronze">
+                            <div class="tier-header">
+                                <h4>Bronze</h4>
+                                <div class="tier-price">$1,000</div>
+                            </div>
+                            <div class="tier-benefits">
+                                <div class="tier-benefit">✓ Monthly Newsletter Feature</div>
+                                <div class="tier-benefit">✓ Merchandise Branding</div>
+                                <div class="tier-benefit">✓ Digital Resume Book</div>
+                            </div>
+                            <div class="tier-highlight">Targeted engagement</div>
                         </div>
-                        <div class="tier-highlight">Comprehensive partnership</div>
-                    </div>
-                    
-                    <div class="tier-card silver">
-                        <div class="tier-header">
-                            <h4>Silver</h4>
-                            <div class="tier-price">$2,500</div>
+                        
+                        <div class="tier-card ignite">
+                            <div class="tier-header">
+                                <h4>Ignite</h4>
+                                <div class="tier-price">$500</div>
+                            </div>
+                            <div class="tier-benefits">
+                                <div class="tier-benefit">✓ Merchandise Branding</div>
+                                <div class="tier-benefit">✓ Digital Resume Book</div>
+                            </div>
+                            <div class="tier-highlight">Perfect starting point</div>
                         </div>
-                        <div class="tier-benefits">
-                            <div class="tier-benefit">✓ Priority invitation to General Body Meetings</div>
-                            <div class="tier-benefit">✓ Monthly Newsletter Feature</div>
-                            <div class="tier-benefit">✓ Merchandise Branding</div>
-                            <div class="tier-benefit">✓ Digital Resume Book</div>
-                        </div>
-                        <div class="tier-highlight">Strong brand presence</div>
-                    </div>
-                    
-                    <div class="tier-card bronze">
-                        <div class="tier-header">
-                            <h4>Bronze</h4>
-                            <div class="tier-price">$1,000</div>
-                        </div>
-                        <div class="tier-benefits">
-                            <div class="tier-benefit">✓ Monthly Newsletter Feature</div>
-                            <div class="tier-benefit">✓ Merchandise Branding</div>
-                            <div class="tier-benefit">✓ Digital Resume Book</div>
-                        </div>
-                        <div class="tier-highlight">Targeted engagement</div>
-                    </div>
-                    
-                    <div class="tier-card ignite">
-                        <div class="tier-header">
-                            <h4>Ignite</h4>
-                            <div class="tier-price">$500</div>
-                        </div>
-                        <div class="tier-benefits">
-                            <div class="tier-benefit">✓ Merchandise Branding</div>
-                            <div class="tier-benefit">✓ Digital Resume Book</div>
-                        </div>
-                        <div class="tier-highlight">Perfect starting point</div>
                     </div>
                 </div>
-            </div>
-            <h1>Where your Support Goes</h1>
-            <div class="support-container">
-                <div class="impact-list">
-                    <div class="impact-category">
-                        <h4>Conference Travel & Lodging</h4>
-                        <p>Helps members attend Fall Regional Conference and NSBE's National Convention</p>
-                    </div>
-                    
-                    <div class="impact-category">
-                        <h4>STEM Outreach Initiatives</h4>
-                        <p>Supports events like the USF Engineering Expo, Sheehy STEM Day, and Lomax Classes</p>
-                    </div>
-                    
-                    <div class="impact-category">
-                        <h4>Scholarships & Awards</h4>
-                        <p>Enables merit-based financial support for high-achieving students</p>
-                    </div>
-                    
-                    <div class="impact-category">
-                        <h4>Professional Development Programming</h4>
-                        <p>Funds workshops, mock interviews, corporate panels, and study halls</p>
-                    </div>
-                    
-                    <div class="impact-category">
-                        <h4>Community Service Projects</h4>
-                        <p>Supports beach cleanups, volunteer days, and events like A Walk for Education</p>
-                    </div>
-                    
-                    <div class="impact-category">
-                        <h4>Chapter Operations & Materials</h4>
-                        <p>Covers t-shirts, supplies, event logistics, and campus activations</p>
+                <h1>Where your Support Goes</h1>
+                <div class="support-container">
+                    <div class="impact-list" role="region" aria-label="Impact of Sponsorship">
+                        <div class="impact-category">
+                            <h4>Conference Travel & Lodging</h4>
+                            <p>Helps members attend Fall Regional Conference and NSBE's National Convention</p>
+                        </div>
+                        
+                        <div class="impact-category">
+                            <h4>STEM Outreach Initiatives</h4>
+                            <p>Supports events like the USF Engineering Expo, Sheehy STEM Day, and Lomax Classes</p>
+                        </div>
+                        
+                        <div class="impact-category">
+                            <h4>Scholarships & Awards</h4>
+                            <p>Enables merit-based financial support for high-achieving students</p>
+                        </div>
+                        
+                        <div class="impact-category">
+                            <h4>Professional Development Programming</h4>
+                            <p>Funds workshops, mock interviews, corporate panels, and study halls</p>
+                        </div>
+                        
+                        <div class="impact-category">
+                            <h4>Community Service Projects</h4>
+                            <p>Supports beach cleanups, volunteer days, and events like A Walk for Education</p>
+                        </div>
+                        
+                        <div class="impact-category">
+                            <h4>Chapter Operations & Materials</h4>
+                            <p>Covers t-shirts, supplies, event logistics, and campus activations</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-        </div>  
-    </section>
+            </div>  
+        </section>
+    </main>
     
     <footer class="modern-footer">
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="https://www.usfnsbe.com/" class="active">Home</a></li>
+                    <li><a href="https://www.usfnsbe.com/">Home</a></li>
                     <li><a href="https://www.usfnsbe.com/about/">About Us</a></li>
                     <li><a href="https://www.usfnsbe.com/initiatives/">Initiatives</a></li>
                     <li><a href="https://www.usfnsbe.com/sponsors/">Sponsors</a></li>
@@ -220,10 +233,10 @@
             <div class="footer-section">
                 <h3>Connect With Us</h3>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/usfnsbe" target="_blank" class="social-link">
+                    <a href="https://www.instagram.com/usfnsbe" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
                         <span>Instagram</span>
                     </a>
-                    <a href="https://www.linkedin.com/company/nsbe-usf-chapter/" target="_blank" class="social-link">
+                    <a href="https://www.linkedin.com/company/nsbe-usf-chapter/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Connect with us on LinkedIn">
                         <span>LinkedIn</span>
                     </a>
                 </div>
@@ -232,7 +245,7 @@
             <div class="footer-section">
                 <h3>Contact Info</h3>
                 <div class="contact-details">
-                    <a href="mailto:vicepresident.usf.nsbe@gmail.com" target="_blank" class="social-link">
+                    <a href="mailto:vicepresident.usf.nsbe@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Email us">
                         <span>Email</span>
                     </a>
                 </div>

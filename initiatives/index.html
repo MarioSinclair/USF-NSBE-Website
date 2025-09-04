@@ -3,32 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the USF NSBE chapter's initiatives focused on community outreach, professional development, academic excellence, and service.">
+    <meta name="description" content="Explore USF NSBE's impactful initiatives including community outreach, professional development, academic excellence, and environmental service programs for engineering students.">
     <title>Initiatives | USF NSBE</title>
+    
+    <!-- Essential SEO Meta Tags -->
+    <meta name="keywords" content="USF NSBE initiatives, engineering student programs, STEM outreach, professional development, academic excellence, community service, engineering education, black engineers, Tampa Bay engineering">
+    <meta name="author" content="USF NSBE Chapter">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Initiatives | USF NSBE">
+    <meta property="og:description" content="Explore USF NSBE's impactful initiatives including community outreach, professional development, academic excellence, and environmental service programs for engineering students.">
+    <meta property="og:image" content="https://www.usfnsbe.com/images/nsbelogo.png">
+    <meta property="og:url" content="https://www.usfnsbe.com/initiatives/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="USF NSBE">
+    
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/nsbelogo.png">
     <link rel="canonical" href="https://www.usfnsbe.com/initiatives/">
 </head>
 <body>
 
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
         <div class="logo">
-            <a href="/"><img src="../images/usflogo.png" alt="USF Logo"></a>
+            <a href="/" aria-label="Go to USF NSBE homepage"><img src="../images/usflogo.png" alt="University of South Florida Logo" fetchpriority="high"></a>
         </div>
         <div class="logo">
-            <a href="/"><img src="../images/nsbelogo.png" alt="NSBE Logo"></a>
+            <a href="/" aria-label="Go to USF NSBE homepage"><img src="../images/nsbelogo.png" alt="National Society of Black Engineers Logo" fetchpriority="high"></a>
         </div>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul class="desktop-nav">
                 <li><a href="https://www.usfnsbe.com/">Home</a></li>
                 <li><a href="https://www.usfnsbe.com/about/">About Us</a></li>
-                <li><a href="https://www.usfnsbe.com/initiatives/" class="active">Initiatives</a></li>
+                <li><a href="https://www.usfnsbe.com/initiatives/" class="active" aria-current="page">Initiatives</a></li>
                 <li><a href="https://www.usfnsbe.com/sponsors/">Sponsors</a></li>
                 <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
                 <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
             </ul>
 
-            <div class="mobile-menu-toggle" id="burgerToggle" role="button" aria-label="Toggle navigation menu" tabindex="0">
+            <div class="mobile-menu-toggle" id="burgerToggle" role="button" aria-label="Toggle navigation menu" tabindex="0" aria-expanded="false">
                 <div class="hamburger-lines">
                     <span class="line line-top"></span>
                     <span class="line line-middle"></span>
@@ -36,11 +53,11 @@
                 </div>
             </div>
 
-            <div class="nav-menu" id="mobileMenu">
+            <div class="nav-menu" id="mobileMenu" aria-hidden="true">
                 <ul>
                     <li><a href="https://www.usfnsbe.com/">Home</a></li>
                     <li><a href="https://www.usfnsbe.com/about/">About Us</a></li>
-                    <li><a href="https://www.usfnsbe.com/initiatives/" class="active">Initiatives</a></li>
+                    <li><a href="https://www.usfnsbe.com/initiatives/" class="active" aria-current="page">Initiatives</a></li>
                     <li><a href="https://www.usfnsbe.com/sponsors/">Sponsors</a></li>
                     <li><a href="https://www.usfnsbe.com/conference/">Conference</a></li>
                     <li><a href="https://www.usfnsbe.com/contact/">Contact Us</a></li>
@@ -48,155 +65,158 @@
             </div>
         </nav>
     </header>
-    <!-- Hero Section -->
-    <section class="wwad">
-        <div class="wwad-container">
-            <div class="sponsor-content">
-                <h1>What's New?</h1>
-                <p class="heading"> Become a member and take part in hands-on programs, outreach, and opportunities that will launch your journey as a future engineer!</p>
-                <div class="wwad-content">
-                    <div class="stats-row">
-                        <div class="stat-item">
-                            <span class="stat-number">380+</span>
-                            <span class="stat-label">Active Members</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">25</span>
-                            <span class="stat-label">Events This Year</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Students Reached</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Company Events</span>
-                        </div>
-                    </div> 
-                    <a href="https://bullsconnect.usf.edu/NSBE/club_signup" target="_blank" class="button">Join Our Mission</a>
-                </div>
-            </div>
-        </div>
-
-    <section class="featured-initiatives">
-        <div class="category-section outreach">
-            <div class="category-header">
-                <h2>Community Outreach</h2>
-                <span class="category-stat">500+ students reached</span>
-            </div>
-            <div class="featured-initiatives-grid">
-                <div class="featured-initiative-card">
-                    <img loading="lazy" src="./images/AWFE.avif" alt="A Walk for Education">
-                    <div class="featured-initiative-content">
-                        <h3>A Walk for Education</h3>
-                        <p>We raised money and distributed over 50 SAT prep books to students in underserved communities, while educating families on college pathways and career readiness.</p>
-                    </div>
-                </div>
-                <div class="featured-initiative-card">
-                    <img loading="lazy" src="../images/eboard_2.jpg" alt="Lomax Elementary STEM Elective Class">
-                    <div class="featured-initiative-content">
-                        <h3>Lomax Elementary STEM Elective Class</h3>
-                        <p>Bi-weekly, our members lead engaging STEM sessions for elementary students—introducing foundational engineering concepts through fun, interactive lessons with robotics.</p>
-                    </div>
-                </div>
-                
-                <div class="featured-initiative-card">
-                    <img loading="lazy" src="./images/Expo.avif" alt="USF Engineering Expo">
-                    <div class="featured-initiative-content">
-                        <h3>USF Engineering Expo</h3>
-                        <p>We hosted immersive activities like oobleck mixtures, baking soda volcanoes, and a liquid sand exhibit to excite K–12 visitors about STEM at USF’s largest outreach event.</p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <!-- Professional Development -->
-        <div class="category-section professional">
-            <div class="category-header">
-                <h2>Professional Development</h2>
-                <span class="category-stat">10+ company events</span>
-            </div>
-            <div class="featured-initiatives-grid">
-                <div class="featured-initiative-card">
-                    <img loading="lazy" src="./images/OfficeVisit.avif" alt="Corporate Partner Spotlights">
-                    <div class="featured-initiative-content">
-                        <h3>Corporate Partner Spotlights</h3>
-                        <p>Industry leaders such as Honeywell, WSP, and Accenture host private sessions with our members, sharing career insights and recruiting talent from our chapter.</p>
-                    </div>
-                </div>
-                <div class="featured-initiative-card">
-                    <img loading="lazy" src="./images/WSP.avif" alt="Corporate Office Tours">
-                    <div class="featured-initiative-content">
-                        <h3>Corporate Office Tours</h3>
-                        <p>Through exclusive visits to company headquarters and facilities, members gain firsthand insight into workplace culture, engineering operations, and early career pathways.</p>
-                    </div>
-                </div>
-                <div class="featured-initiative-card">
-                    <img loading="lazy" src="./images/ConferencePrep.avif" alt="Conference Preparation Series">
-                    <div class="featured-initiative-content">
-                        <h3>Conference Preparation Series</h3>
-                        <p>In the lead-up to FRC and the National Convention, we support members with targeted prep: resumes, attire tips, networking strategy, and goal-setting.</p>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        <!-- Academic Excellence -->
-        <div class="category-section academic">
-            <div class="category-header">
-                <h2>Academic Excellence</h2>
-                <span class="category-stat">380+ active members</span>
-            </div>
-            <div class="featured-initiatives-grid">
-                <div class="featured-initiative-card">
-                    <img loading="lazy" src="./images/AcademicSuccess.avif" alt="Academic Study Halls">
-                    <div class="featured-initiative-content">
-                        <h3>Academic Study Halls</h3>
-                        <p>Quarterly study halls provide a focused, collaborative space where members can review course material, receive tutoring, and hold each other accountable in the semester.</p>
-                    </div>
-                </div>
-                <div class="featured-initiative-card">
-                    <img loading="lazy" src="./images/Panel2.avif" alt="King High School College Readiness Program">
-                    <div class="featured-initiative-content">
-                        <h3>King High School College Readiness Program</h3>
-                        <p>Our members joined a scholar panel for rising seniors,
-                            offering real insights on navigating college life, choosing
-                            majors, and preparing for post-secondary success.</p>
-                    </div>
-                </div>
-                <div class="featured-initiative-card">
-                    <img loading="lazy" src="../images/eboard_1.jpg" alt="Graduate School Prep Workshops">
-                    <div class="featured-initiative-content">
-                        <h3>Graduate School Prep Workshops</h3>
-                        <p>Workshops and resources to help members prepare for graduate school applications, exams, and interviews.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Environmental & Service -->
-        <div class="category-section service">
-            <div class="category-header">
-                <h2>Environmental & Service</h2>
-                <span class="category-stat">Multiple service projects yearly</span>
-            </div>
-            <div class="featured-initiatives-grid">
-                <div class="featured-initiative-card">
-                    <img loading="lazy" src="./images/BeachCleanup.avif" alt="Sunset Beach Clean-Up">
-                    <div class="featured-initiative-content">
-                        <h3>Sunset Beach Clean-Up</h3>
-                        <p>Our chapter rolled up our sleeves for a coastal cleanup at Sunset Beach, demonstrating our commitment to environmental stewardship and public service.</p>
-                    </div>
-                </div>
-                <div class="featured-initiative-card">
-                    <img loading="lazy" src="./images/MM.avif" alt="Volunteer Day with Metropolitan Ministries">
-                    <div class="featured-initiative-content">
-                        <h3>Volunteer Day with Metropolitan Ministries</h3>
-                        <p>USF NSBE members volunteered with Metropolitan Ministries—serving meals, sorting through clothing donations, and bringing care to families in need.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     
+    <!-- Hero Section -->
+    <main id="main-content">
+        <section class="wwad">
+            <div class="wwad-container">
+                <div class="sponsor-content">
+                    <h1>What's New?</h1>
+                    <p class="heading">Become a member and take part in hands-on programs, outreach, and opportunities that will launch your journey as a future engineer!</p>
+                    <div class="wwad-content">
+                        <div class="stats-row" role="region" aria-label="Chapter Impact Statistics">
+                            <div class="stat-item">
+                                <span class="stat-number" aria-label="Over 380">380+</span>
+                                <span class="stat-label">Active Members</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" aria-label="25">25</span>
+                                <span class="stat-label">Events This Year</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" aria-label="Over 500">500+</span>
+                                <span class="stat-label">Students Reached</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" aria-label="Over 10">10+</span>
+                                <span class="stat-label">Company Events</span>
+                            </div>
+                        </div> 
+                        <a href="https://bullsconnect.usf.edu/NSBE/club_signup" target="_blank" rel="noopener noreferrer" class="button" aria-label="Join USF NSBE on BullsConnect">Join Our Mission</a>
+                    </div>
+                </div>
+            </div>
+        
+            <section class="featured-initiatives" aria-label="USF NSBE Programs and Initiatives">
+                <div class="category-section outreach">
+                    <div class="category-header">
+                        <h2>Community Outreach</h2>
+                        <span class="category-stat">500+ students reached</span>
+                    </div>
+                    <div class="featured-initiatives-grid" role="region" aria-label="Community Outreach Programs">
+                        <article class="featured-initiative-card">
+                            <img loading="lazy" src="./images/AWFE.avif" alt="A Walk for Education - USF NSBE members distributing SAT prep books to underserved communities" fetchpriority="high">
+                            <div class="featured-initiative-content">
+                                <h3>A Walk for Education</h3>
+                                <p>We raised money and distributed over 50 SAT prep books to students in underserved communities, while educating families on college pathways and career readiness.</p>
+                            </div>
+                        </article>
+                        <article class="featured-initiative-card">
+                            <img loading="lazy" src="../images/eboard_2.jpg" alt="Lomax Elementary STEM Elective Class - USF NSBE members teaching robotics to elementary students" fetchpriority="high">
+                            <div class="featured-initiative-content">
+                                <h3>Lomax Elementary STEM Elective Class</h3>
+                                <p>Bi-weekly, our members lead engaging STEM sessions for elementary students—introducing foundational engineering concepts through fun, interactive lessons with robotics.</p>
+                            </div>
+                        </article>
+                        
+                        <article class="featured-initiative-card">
+                            <img loading="lazy" src="./images/Expo.avif" alt="USF Engineering Expo - NSBE members demonstrating STEM activities including oobleck mixtures and baking soda volcanoes" fetchpriority="high">
+                            <div class="featured-initiative-content">
+                                <h3>USF Engineering Expo</h3>
+                                <p>We hosted immersive activities like oobleck mixtures, baking soda volcanoes, and a liquid sand exhibit to excite K–12 visitors about STEM at USF's largest outreach event.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Professional Development -->
+                <div class="category-section professional">
+                    <div class="category-header">
+                        <h2>Professional Development</h2>
+                        <span class="category-stat">10+ company events</span>
+                    </div>
+                    <div class="featured-initiatives-grid" role="region" aria-label="Professional Development Programs">
+                        <article class="featured-initiative-card">
+                            <img loading="lazy" src="./images/OfficeVisit.avif" alt="Corporate Partner Spotlights - Industry leaders from Honeywell, WSP, and Accenture hosting private sessions with NSBE members" fetchpriority="high">
+                            <div class="featured-initiative-content">
+                                <h3>Corporate Partner Spotlights</h3>
+                                <p>Industry leaders such as Honeywell, WSP, and Accenture host private sessions with our members, sharing career insights and recruiting talent from our chapter.</p>
+                            </div>
+                        </article>
+                        <article class="featured-initiative-card">
+                            <img loading="lazy" src="./images/WSP.avif" alt="Corporate Office Tours - USF NSBE members visiting company headquarters and facilities" fetchpriority="high">
+                            <div class="featured-initiative-content">
+                                <h3>Corporate Office Tours</h3>
+                                <p>Through exclusive visits to company headquarters and facilities, members gain firsthand insight into workplace culture, engineering operations, and early career pathways.</p>
+                            </div>
+                        </article>
+                        <article class="featured-initiative-card">
+                            <img loading="lazy" src="./images/ConferencePrep.avif" alt="Conference Preparation Series - NSBE members preparing for FRC and National Convention with resume and networking workshops" fetchpriority="high">
+                            <div class="featured-initiative-content">
+                                <h3>Conference Preparation Series</h3>
+                                <p>In the lead-up to FRC and the National Convention, we support members with targeted prep: resumes, attire tips, networking strategy, and goal-setting.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Academic Excellence -->
+                <div class="category-section academic">
+                    <div class="category-header">
+                        <h2>Academic Excellence</h2>
+                        <span class="category-stat">380+ active members</span>
+                    </div>
+                    <div class="featured-initiatives-grid" role="region" aria-label="Academic Excellence Programs">
+                        <article class="featured-initiative-card">
+                            <img loading="lazy" src="./images/AcademicSuccess.avif" alt="Academic Study Halls - USF NSBE members collaborating in focused study sessions" fetchpriority="high">
+                            <div class="featured-initiative-content">
+                                <h3>Academic Study Halls</h3>
+                                <p>Quarterly study halls provide a focused, collaborative space where members can review course material, receive tutoring, and hold each other accountable in the semester.</p>
+                            </div>
+                        </article>
+                        <article class="featured-initiative-card">
+                            <img loading="lazy" src="./images/Panel2.avif" alt="King High School College Readiness Program - USF NSBE members participating in scholar panel for rising seniors" fetchpriority="high">
+                            <div class="featured-initiative-content">
+                                <h3>King High School College Readiness Program</h3>
+                                <p>Our members joined a scholar panel for rising seniors, offering real insights on navigating college life, choosing majors, and preparing for post-secondary success.</p>
+                            </div>
+                        </article>
+                        <article class="featured-initiative-card">
+                            <img loading="lazy" src="../images/eboard_1.jpg" alt="Graduate School Prep Workshops - USF NSBE members preparing for graduate school applications and interviews" fetchpriority="high">
+                            <div class="featured-initiative-content">
+                                <h3>Graduate School Prep Workshops</h3>
+                                <p>Workshops and resources to help members prepare for graduate school applications, exams, and interviews.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Environmental & Service -->
+                <div class="category-section service">
+                    <div class="category-header">
+                        <h2>Environmental & Service</h2>
+                        <span class="category-stat">Multiple service projects yearly</span>
+                    </div>
+                    <div class="featured-initiatives-grid" role="region" aria-label="Environmental and Service Projects">
+                        <article class="featured-initiative-card">
+                            <img loading="lazy" src="./images/BeachCleanup.avif" alt="Sunset Beach Clean-Up - USF NSBE members participating in coastal cleanup at Sunset Beach" fetchpriority="high">
+                            <div class="featured-initiative-content">
+                                <h3>Sunset Beach Clean-Up</h3>
+                                <p>Our chapter rolled up our sleeves for a coastal cleanup at Sunset Beach, demonstrating our commitment to environmental stewardship and public service.</p>
+                            </div>
+                        </article>
+                        <article class="featured-initiative-card">
+                            <img loading="lazy" src="./images/MM.avif" alt="Volunteer Day with Metropolitan Ministries - USF NSBE members serving meals and sorting clothing donations" fetchpriority="high">
+                            <div class="featured-initiative-content">
+                                <h3>Volunteer Day with Metropolitan Ministries</h3>
+                                <p>USF NSBE members volunteered with Metropolitan Ministries—serving meals, sorting through clothing donations, and bringing care to families in need.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
 
     <footer class="modern-footer">
         <div class="footer-container">
@@ -215,10 +235,10 @@
             <div class="footer-section">
                 <h3>Connect With Us</h3>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/usfnsbe" target="_blank" class="social-link">
+                    <a href="https://www.instagram.com/usfnsbe" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Follow us on Instagram">
                         <span>Instagram</span>
                     </a>
-                    <a href="https://www.linkedin.com/company/nsbe-usf-chapter" target="_blank" class="social-link">
+                    <a href="https://www.linkedin.com/company/nsbe-usf-chapter" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Connect with us on LinkedIn">
                         <span>LinkedIn</span>
                     </a>
                 </div>
@@ -227,7 +247,7 @@
             <div class="footer-section">
                 <h3>Contact Info</h3>
                 <div class="contact-details">
-                    <a href="mailto:vicepresident.usf.nsbe@gmail.com" target="_blank" class="social-link">
+                    <a href="mailto:vicepresident.usf.nsbe@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Email us">
                         <span>Email</span>
                     </a>
                 </div>
