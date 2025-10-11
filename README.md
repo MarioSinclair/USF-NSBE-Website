@@ -42,4 +42,4 @@ start index.html  # or manually open the file in your browser
 ### Issues & Support
 If you encounter any issues, feel free to check the [Issues](https://github.com/MarioSinclair/NSBE-LandingPage/issues) section or open a new issue describing the problem.
 
-Happy coding!
+Happy coding and thanks for contributing!
