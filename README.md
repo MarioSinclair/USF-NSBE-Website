@@ -8,10 +8,10 @@ To set up the project locally, follow these steps:
 
 ```sh
 # Clone the repository
-git clone https://github.com/MarioSinclair/NSBE-LandingPage.git
+git clone https://github.com/MarioSinclair/USF-NSBE-Website.git
 
 # Navigate to the project directory
-cd nsbe-landingpage
+cd USF-NSBE-Website
 
 # Open the project in a browser
 start index.html  # or manually open the file in your browser
