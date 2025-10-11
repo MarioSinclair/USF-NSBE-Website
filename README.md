@@ -1,4 +1,4 @@
-### USF NSBE Website
+## USF NSBE Website
 
 The USF NSBE Website project aims to provide a professional, responsive, and informational hub for the University of South Florida chapter of the National Society of Black Engineers. This site is built using foundational web technologies (HTML, CSS, and vanilla JavaScript) and is designed to serve as a clean, reliable resource for our members, the university community, and corporate partners.
 
@@ -6,7 +6,7 @@ The majority of the core structure is complete, and we welcome contributions to 
 
 ---
 
-### Installation
+## Installation
 
 To set up the project locally, follow these steps:
 
@@ -26,7 +26,7 @@ To set up the project locally, follow these steps:
 
 ---
 
-### How to Contribute
+## How to Contribute
 
 We welcome contributions from NSBE members and the wider community! We encourage you to start by tackling pages that need content or making minor style adjustments.
 
@@ -37,6 +37,6 @@ Thanks for contributing!!! :)
 
 ---
 
-### License
+## License
 This project is released under the permissive MIT License. You can find the full license text in the [LICENSE](https://github.com/MarioSinclair/USF-NSBE-Website/blob/main/LICENSE.md) file.
 
