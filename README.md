@@ -12,7 +12,7 @@ To set up the project locally, follow these steps:
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/MarioSinclair/USF-NSBE-Website.git](https://github.com/MarioSinclair/USF-NSBE-Website.git)
+    git clone https://github.com/MarioSinclair/USF-NSBE-Website.git
     ```
 2.  **Navigate to the project directory**
     ```bash
@@ -32,6 +32,8 @@ We welcome contributions from NSBE members and the wider community! We encourage
 
 To ensure a smooth collaboration process, please read our dedicated guidelines before submitting changes:
 [Read the Full Contribution Guide Here](https://github.com/MarioSinclair/USF-NSBE-Website/blob/main/CONTRIBUTING.md)
+
+Thanks for contributing!!! :) 
 
 ---
 
