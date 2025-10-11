@@ -18,11 +18,14 @@ To set up the project locally, follow these steps:
     ```bash
     cd USF-NSBE-Website
     ```
-3.  **Open the project in a browser**
-    ```bash
-    start index.html
-    ```
-    or manually open the `index.html` file in your browser.
+3.  **Run a local development server**
+    
+    The site uses root-relative paths for navigation, so a local server is needed.
+    
+    **VS Code Live Server (Recommended)**
+    - Install the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code
+    - Right-click on `index.html` → "Open with Live Server"
+    - Your site will open at `http://127.0.0.1:5500/`
 
 ---
 

@@ -12,9 +12,37 @@ git clone https://github.com/MarioSinclair/USF-NSBE-Website.git
 
 # Navigate to the project directory
 cd USF-NSBE-Website
+```
 
-# Open the project in a browser
-start index.html  # or manually open the file in your browser
+### Running the Project Locally
+
+Choose any of the following options:
+
+#### Option 1: VS Code Live Server (Recommended)
+The easiest method if you use VS Code:
+1. Install the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+2. Right-click on `index.html` → "Open with Live Server"
+3. Your site will automatically open at `http://127.0.0.1:5500/`
+4. Changes auto-reload when you save files
+
+#### Option 2: Python (Built into most systems)
+If you have Python installed:
+```sh
+
+python -m http.server 8000
+
+```
+Then visit `http://localhost:8000` in your browser.
+
+#### Option 3: Node.js
+If you have Node.js/npm installed:
+```sh
+# Using npx (no installation needed)
+npx serve
+
+# Or install http-server globally
+npm install -g http-server
+http-server -p 8000
 ```
 
 ### Contribution Guidelines
