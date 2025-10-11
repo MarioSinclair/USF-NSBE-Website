@@ -68,6 +68,6 @@ http-server -p 8000
 - Ensure your changes are responsive and mobile-friendly.
 
 ### Issues & Support
-If you encounter any issues, feel free to check the [Issues](https://github.com/MarioSinclair/NSBE-LandingPage/issues) section or open a new issue describing the problem.
+If you encounter any issues, feel free to check the [Issues](https://github.com/MarioSinclair/USF-NSBE-Website/issues) section or open a new issue describing the problem.
 
 Happy coding and thanks for contributing!
