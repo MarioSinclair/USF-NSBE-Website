@@ -30,7 +30,7 @@ To set up the project locally, follow these steps:
 
 We welcome contributions from NSBE members and the wider community! We encourage you to start by tackling pages that need content or making minor style adjustments.
 
-To ensure a smooth collaboration process, please read our dedicated guidelines before submitting changes:
+To ensure a smooth collaboration process, please read our dedicated guidelines before submitting changes:\
 [Read the Full Contribution Guide Here](https://github.com/MarioSinclair/USF-NSBE-Website/blob/main/CONTRIBUTING.md)
 
 Thanks for contributing!!! :) 
