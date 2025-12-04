@@ -20,7 +20,6 @@
     <meta property="og:site_name" content="USF NSBE">
     
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="icon" href="./images/nsbelogo.png">
     <link rel="canonical" href="https://www.usfnsbe.com/">
 </head>
@@ -69,49 +68,89 @@
 
     <main id="main-content">
         <div class="hero-image-container">
-            <img loading="lazy" src="images/hero.avif" alt="E-Board presenting at USF NSBE meeting" fetchpriority="high">
+            <img loading="lazy" src="images/hero.jpg" alt="E-Board presenting at USF NSBE meeting" fetchpriority="high">
             <img loading="lazy" src="./images/NSBE-banner.png" alt="NSBE Banner" class="img-banner" fetchpriority="high">
         </div>
         
-        <div class="nsbe-mission-highlight">
-            <h1 class="nsbe-mission-label">Our Mission</h1>
-            <blockquote class="nsbe-mission-quote">
-                NSBE's mission is to increase the number of culturally responsible Black engineers who excel academically, succeed professionally, and positively impact the community.
-            </blockquote>
-        </div>
-        
-        <section class="hero">
-            <div class="hero-content">
-                <div class="chapter-intro-card">
-                    <h1 class="chapter-intro-title">USF Chapter</h1>
-                    <p>
-                        Our USF chapter actively upholds this mission through a variety of engaging programs and initiatives. We focus on fostering academic excellence, offering invaluable professional development opportunities, and implementing robust pre-college initiatives that inspire the next generation of STEM leaders. From technical workshops and career guidance to community outreach and leadership development, we strive to create a supportive and empowering environment for our members to thrive. Join us as we work to make a striking impact on both the engineering world and the broader community.
+        <section class="mission-chapter-section">
+            <div class="mission-container">
+                <div class="mission-badge">Our Mission</div>
+                <div class="mission-card">
+                    <p class="mission-text">
+                        NSBE's mission is to increase the number of culturally responsible Black engineers who excel academically, succeed professionally, and positively impact the community.
                     </p>
                 </div>
-                <a href="/about/" class="button" aria-label="Learn more about USF NSBE chapter">Learn More</a>
-                <a href="/contact/" class="button" aria-label="Join USF NSBE chapter">Join Us</a>
+            </div>
+
+            <div class="chapter-container">
+                <div class="chapter-card">
+                    <h2 class="chapter-title">USF Chapter</h2>
+                    <p class="chapter-text">
+                        Our USF chapter actively upholds this mission through a variety of engaging programs and initiatives. We focus on fostering academic excellence, offering invaluable professional development opportunities, and implementing robust pre-college initiatives that inspire the next generation of STEM leaders. From technical workshops and career guidance to community outreach and leadership development, we strive to create a supportive and empowering environment for our members to thrive. Join us as we work to make a striking impact on both the engineering world and the broader community.
+                    </p>
+                    <div class="button-group">
+                        <a href="/about/" class="cta-button primary" aria-label="Learn more about USF NSBE chapter">Learn More</a>
+                        <a href="/contact/" class="cta-button secondary" aria-label="Join USF NSBE chapter">Join Us</a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="highlights" aria-label="Featured NSBE Events and Activities">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="./images/eboard_1.jpg" alt="USF NSBE E-Board members collaborating on chapter initiatives" class="highlight-image">
-                    </div>
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="./images/eboard_2.jpg" alt="USF NSBE members participating in STEM outreach activities" class="highlight-image">
-                    </div>
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="./images/eboard_3.jpg" alt="USF NSBE chapter leadership team planning events" class="highlight-image">
-                    </div>
-                    <div class="swiper-slide">
-                        <img loading="lazy" src="./images/eboard_3.png" alt="USF NSBE members engaging in professional development workshops" class="highlight-image">
+        <section class="carousel-section" aria-label="Featured NSBE Highlights">
+            <h2 class="section-title">Our Impact</h2>
+            <div class="custom-carousel" role="region" aria-roledescription="carousel" aria-label="NSBE highlights carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide active" role="group" aria-roledescription="slide" aria-label="1 of 5">
+                            <img src="./images/eboard_1.jpg" alt="NSBE panel discussion with industry professionals">
+                            <div class="carousel-caption">
+                                <h3>Professional Development</h3>
+                                <p>Connecting students with industry leaders through panel discussions and workshops</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+                            <img src="./images/eboard_2.jpg" alt="Students studying together">
+                            <div class="carousel-caption">
+                                <h3>Academic Excellence</h3>
+                                <p>Supporting members through tutoring, study groups, and academic resources</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+                            <img src="./images/eboard_3.png" alt="NSBE members at beach cleanup event">
+                            <div class="carousel-caption">
+                                <h3>Community Service</h3>
+                                <p>Making a positive impact through volunteer work and community engagement</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+                            <img src="./images/eboard_4.jpg" alt="Students preparing for NSBE conference">
+                            <div class="carousel-caption">
+                                <h3>Conference Preparation</h3>
+                                <p>Preparing members for success at regional and national NSBE conferences</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+                            <img src="./images/eboard_5.png" alt="NSBE career expo event">
+                            <div class="carousel-caption">
+                                <h3>Career Opportunities</h3>
+                                <p>Facilitating connections between students and top engineering employers</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-pagination" aria-label="Slide navigation"></div>
-                <div class="swiper-button-prev" aria-label="Previous slide"></div>
-                <div class="swiper-button-next" aria-label="Next slide"></div>
+                <button class="carousel-btn carousel-btn-prev" aria-label="Previous slide">
+                    <span aria-hidden="true">‹</span>
+                </button>
+                <button class="carousel-btn carousel-btn-next" aria-label="Next slide">
+                    <span aria-hidden="true">›</span>
+                </button>
+                <div class="carousel-indicators" role="tablist" aria-label="Slide navigation">
+                    <button class="indicator active" role="tab" aria-selected="true" aria-label="Go to slide 1"></button>
+                    <button class="indicator" role="tab" aria-selected="false" aria-label="Go to slide 2"></button>
+                    <button class="indicator" role="tab" aria-selected="false" aria-label="Go to slide 3"></button>
+                    <button class="indicator" role="tab" aria-selected="false" aria-label="Go to slide 4"></button>
+                    <button class="indicator" role="tab" aria-selected="false" aria-label="Go to slide 5"></button>
+                </div>
             </div>
         </section>
     </main>
@@ -155,39 +194,9 @@
             <p>&copy; 2025 NSBE USF Chapter. All rights reserved.</p>
         </div>
     </footer>
-    
+
     <script src="/js/menu.js" defer></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper', {
-            loop: true, 
-            cssMode: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: true,
-            },
-            slidesPerView: 1, 
-            spaceBetween: 0,
-            
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true, 
-            },
-
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            a11y: {
-                prevSlideMessage: 'Previous slide',
-                nextSlideMessage: 'Next slide',
-                firstSlideMessage: 'This is the first slide',
-                lastSlideMessage: 'This is the last slide',
-                paginationBulletMessage: 'Go to slide {{index}}',
-            }
-        });
-    </script>
+    <script src="/js/carousel.js" defer></script>
 
 </body>
 </html>

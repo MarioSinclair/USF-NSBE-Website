@@ -609,14 +609,10 @@ nav a:hover, nav a.active {
     border-color: #FFD100;
 }
 
-.member-image {
-    width: 50%;
-    height: auto;
-    
-  }
+
 .member-img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -1408,4 +1404,514 @@ nav a:hover, nav a.active {
     font-size: 1.1rem;
     line-height: 1.6;
     margin: 0;
+}
+
+/* Custom Carousel Styles */
+.carousel-section {
+    padding: 60px 20px;
+    margin: 0;
+}
+
+.carousel-section .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #463F3A;
+    margin-bottom: 40px;
+    font-weight: 700;
+    position: relative;
+}
+
+.carousel-section .section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.custom-carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #fff;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    display: none;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    display: block;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 70%, transparent 100%);
+    color: white;
+    padding: 40px 30px 30px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    color: #463F3A;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn:hover {
+    background: #FFD700;
+    color: #463F3A;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-btn:focus {
+    outline: 3px solid #FFD700;
+    outline-offset: 3px;
+}
+
+.carousel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-btn-prev {
+    left: 20px;
+}
+
+.carousel-btn-next {
+    right: 20px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 0 0 16px 16px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #463F3A;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.indicator:hover {
+    background: #FFD700;
+    border-color: #FFD700;
+    transform: scale(1.2);
+}
+
+.indicator:focus {
+    outline: 2px solid #FFD700;
+    outline-offset: 3px;
+}
+
+.indicator.active {
+    background: #463F3A;
+    width: 32px;
+    border-radius: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-section {
+        padding: 40px 10px;
+    }
+
+    .carousel-section .section-title {
+        font-size: 2rem;
+    }
+
+    .carousel-slide img {
+        height: 350px;
+    }
+
+    .carousel-caption {
+        padding: 30px 20px 20px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .carousel-btn-prev {
+        left: 10px;
+    }
+
+    .carousel-btn-next {
+        right: 10px;
+    }
+
+    .indicator {
+        width: 10px;
+        height: 10px;
+    }
+
+    .indicator.active {
+        width: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-slide img {
+        height: 280px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.3rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-section .section-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* Mission & Chapter Section - Modern Design */
+.mission-chapter-section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 20px;
+}
+
+/* Mission Card */
+.mission-container {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.mission-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #231F20;
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.8rem;
+    border-radius: 50px;
+    margin: 0 auto 1.5rem;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-card {
+    background: linear-gradient(135deg, #009639 0%, #00b347 50%, #FFD700 100%);
+    padding: 2.5rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 150, 57, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #FFD700, #009639, #FFD700);
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.mission-card:hover::before {
+    opacity: 1;
+}
+
+.mission-text {
+    color: white;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.8;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+/* Chapter Card */
+.chapter-container {
+    margin-top: 3rem;
+}
+
+.chapter-card {
+    background: white;
+    padding: 3rem 2.5rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    position: relative;
+    border: 4px solid transparent;
+    background-image:
+        linear-gradient(white, white),
+        linear-gradient(135deg, #009639 0%, #FFD700 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chapter-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 150, 57, 0.15);
+}
+
+.chapter-title {
+    color: #009639;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.chapter-text {
+    color: #463F3A;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.9rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 140px;
+}
+
+.cta-button.primary {
+    background: linear-gradient(135deg, #009639 0%, #00b347 100%);
+    color: white;
+}
+
+.cta-button.primary:hover {
+    background: linear-gradient(135deg, #00b347 0%, #009639 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 150, 57, 0.3);
+}
+
+.cta-button.secondary {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #231F20;
+}
+
+.cta-button.secondary:hover {
+    background: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-chapter-section {
+        margin: 2rem auto;
+    }
+
+    .mission-badge {
+        font-size: 1rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    .mission-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .mission-text {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+    .chapter-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .chapter-title {
+        font-size: 1.8rem;
+    }
+
+    .chapter-text {
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    .button-group {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .cta-button {
+        padding: 1rem 2rem;
+        font-size: 1.05rem;
+        min-width: 150px;
+        font-weight: 700;
+    }
+
+    /* Ensure buttons work well on touch devices */
+    .cta-button:active {
+        transform: scale(0.98);
+    }
+}
+
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+        width: 100%;
+    }
+
+    .cta-button {
+        max-width: 100%;
+        padding: 1.1rem 2rem;
+        font-size: 1.1rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Remove hover transforms on mobile, use active state instead */
+    .cta-button.primary:hover,
+    .cta-button.secondary:hover {
+        transform: none;
+    }
+
+    .cta-button:active {
+        transform: scale(0.97);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (max-width: 480px) {
+    .mission-card {
+        padding: 1.5rem 1.2rem;
+        border-radius: 16px;
+    }
+
+    .mission-text {
+        font-size: 1rem;
+    }
+
+    .chapter-card {
+        padding: 1.8rem 1.2rem;
+        border-radius: 16px;
+    }
+
+    .chapter-title {
+        font-size: 1.5rem;
+    }
+
+    .chapter-text {
+        font-size: 1rem;
+    }
+
+    .button-group {
+        gap: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 1rem 1.5rem;
+        font-size: 1.05rem;
+        border-radius: 10px;
+    }
 }
